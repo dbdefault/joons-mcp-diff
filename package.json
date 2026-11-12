@@ -1,0 +1,16 @@
+{
+  "name": "joons-mcp-diff",
+  "version": "0.1.0",
+  "description": "Detect MCP tool and schema changes before they break your AI agents.",
+  "type": "module",
+  "license": "Apache-2.0",
+  "bin": { "joons-mcp-diff": "bin/joons-mcp-diff.js" },
+  "main": "src/index.js",
+  "exports": { ".": "./src/index.js" },
+  "files": ["bin", "src", "docs", "examples", "README.md", "README.ko.md", "LICENSE", "CHANGELOG.md", "SECURITY.md", "CONTRIBUTING.md"],
+  "engines": { "node": ">=20" },
+  "scripts": { "test": "node scripts/test.js" },
+  "dependencies": { "@modelcontextprotocol/sdk": "~1.32.2", "zod": "^4.6.7" },
+  "repository": { "type": "git", "url": "git+https://github.com/dbdefault/joons-mcp-diff.git" },
+  "keywords": ["mcp", "model-context-protocol", "diff", "schema", "compatibility", "breaking-changes", "ai-agents", "joons"]
+}

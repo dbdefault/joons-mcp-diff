@@ -1,0 +1,58 @@
+import test from 'node:test';
+import assert from 'node:assert/strict';
+import {compareInputSchema as diff} from '../src/diff/schema.js';
+const cases=[];
+const pair=(name,a,b,forward,reverse)=>{cases.push([name,a,b,forward],[name+' reverse',b,a,reverse]);};
+pair('required',{}, {required:['x']},'BREAKING','NON_BREAKING');
+pair('optional property',{}, {properties:{x:{type:'string'}}},'UNKNOWN','UNKNOWN');
+pair('closed property',{additionalProperties:false},{additionalProperties:false,properties:{x:{}}},'NON_BREAKING','BREAKING');
+pair('new required property',{}, {properties:{x:{}},required:['x']},'BREAKING','NON_BREAKING');
+for(const t of ['string','number','integer','object','array','boolean','null']) pair('type '+t,{}, {type:t},'BREAKING','NON_BREAKING');
+pair('integer number',{type:'integer'},{type:'number'},'NON_BREAKING','BREAKING');
+pair('nullable',{type:'string'},{type:['string','null']},'NON_BREAKING','BREAKING');
+pair('disjoint',{type:'string'},{type:'number'},'BREAKING','BREAKING');
+pair('overlap',{type:['string','number']},{type:['string','boolean']},'UNKNOWN','UNKNOWN');
+pair('enum',{}, {enum:['x']},'BREAKING','NON_BREAKING');
+pair('enum extension',{enum:['x']},{enum:['x','y']},'NON_BREAKING','BREAKING');
+pair('const',{}, {const:0},'BREAKING','NON_BREAKING');
+pair('const replacement',{const:0},{const:1},'BREAKING','BREAKING');
+pair('closed',{}, {additionalProperties:false},'BREAKING','NON_BREAKING');
+pair('schema additional',{}, {additionalProperties:{type:'string'}},'UNKNOWN','UNKNOWN');
+for(const k of ['minimum','exclusiveMinimum','minLength','minItems']) {
+  pair(k+' added',{}, {[k]:2},'BREAKING','NON_BREAKING');
+  pair(k+' tightened',{[k]:2},{[k]:3},'BREAKING','NON_BREAKING');
+}
+for(const k of ['maximum','exclusiveMaximum','maxLength','maxItems']) {
+  pair(k+' added',{}, {[k]:3},'BREAKING','NON_BREAKING');
+  pair(k+' tightened',{[k]:3},{[k]:2},'BREAKING','NON_BREAKING');
+}
+pair('unique',{}, {uniqueItems:true},'BREAKING','NON_BREAKING');
+for(const k of ['multipleOf','pattern','format']) pair(k,{[k]:k==='multipleOf'?2:'a'},{[k]:k==='multipleOf'?3:'b'},'UNKNOWN','UNKNOWN');
+for(const k of ['$ref','$defs','definitions','oneOf','anyOf','allOf','not','if','then','else','dependentRequired','dependentSchemas','patternProperties','prerequisites']) pair(k,{}, {[k]:k==='$ref'?'external':{}},'UNKNOWN','UNKNOWN');
+pair('unknown keyword',{}, {custom:true},'UNKNOWN','UNKNOWN');
+pair('description',{description:'a'},{description:'b'},'NON_BREAKING','NON_BREAKING');
+pair('title',{title:'a'},{title:'b'},'NON_BREAKING','NON_BREAKING');
+for(const [name,a,b,severity] of cases) test(name,()=>assert.ok(diff(a,b).some(c=>c.severity===severity),JSON.stringify(diff(a,b))));
+for(const [name,a,b] of cases.slice(0,24)) test(name+' identical',()=>assert.deepEqual(diff(a,a),[]));
+test('order only',()=>assert.deepEqual(diff({type:['null','string'],required:['b','a'],enum:[2,1],properties:{b:{},a:{}}},{properties:{a:{},b:{}},enum:[1,2],required:['a','b'],type:['string','null']}),[]));
+test('const equals enum',()=>assert.deepEqual(diff({const:'x'},{enum:['x']}),[]));
+test('additional absent equals true',()=>assert.deepEqual(diff({},{additionalProperties:true}),[]));
+test('nested escaped pointer',()=>assert.equal(diff({properties:{'a/b~':{items:{type:'number'}}}},{properties:{'a/b~':{items:{type:'integer'}}}})[0].path,'/properties/a~1b~0/items/type'));
+test('required plus new property',()=>assert.deepEqual(diff({},{properties:{x:{}},required:['x']}).map(c=>c.kind),['required_added','property_added']));
+test('ref target changed',()=>assert.ok(diff({$defs:{x:{type:'string'}},$ref:'#/$defs/x'},{$defs:{x:{type:'number'}},$ref:'#/$defs/x'}).some(c=>c.path==='/$ref'&&c.severity==='UNKNOWN')));
+test('ref cycle identical is unknown',()=>assert.equal(diff({$ref:'#/$defs/x',$defs:{x:{$ref:'#/$defs/x'}}},{$ref:'#/$defs/x',$defs:{x:{$ref:'#/$defs/x'}}})[0].severity,'UNKNOWN'));
+test('same local ref',()=>assert.deepEqual(diff({$ref:'#/$defs/x',$defs:{x:{type:'string'}}},{$ref:'#/$defs/x',$defs:{x:{type:'string'}}}),[]));
+test('invalid schemas',()=>{for(const v of [null,false,[],2,'x'])assert.equal(diff(v,{})[0].kind,'schema_invalid');});
+test('required path names affected property',()=>assert.equal(diff({},{required:['x/y']})[0].path,'/required/x~1y'));
+test('false uniqueness equals absence',()=>assert.deepEqual(diff({},{uniqueItems:false}),[]));
+test('invalid bound conservative',()=>assert.equal(diff({minimum:2},{minimum:'3'})[0].severity,'UNKNOWN'));
+test('explicit null custom keyword',()=>assert.equal(diff({},{custom:null})[0].severity,'UNKNOWN'));
+test('type integer redundant number',()=>assert.deepEqual(diff({type:'number'},{type:['number','integer']}),[]));
+test('nested property removed closed',()=>assert.equal(diff({properties:{x:{properties:{y:{}}}}},{properties:{x:{additionalProperties:false}}}).find(c=>c.kind==='property_removed').severity,'BREAKING'));
+test('boolean items conservative',()=>assert.equal(diff({items:true},{items:false})[0].severity,'UNKNOWN'));
+test('local reference alternate identity',()=>assert.deepEqual(diff({$defs:{a:{type:'string'},b:{type:'string'}},$ref:'#/$defs/a'},{$defs:{a:{type:'string'},b:{type:'string'}},$ref:'#/$defs/b'}),[]));
+test('escaped local reference identity',()=>assert.deepEqual(diff({$defs:{'a/b~':{}},$ref:'#/$defs/a~1b~0'},{$defs:{'a/b~':{}},$ref:'#/$defs/a~1b~0'}),[]));
+test('unresolved local reference conservative',()=>assert.ok(diff({$ref:'#/missing'},{$ref:'#/missing'}).every(c=>c.severity==='UNKNOWN')));
+test('type array order',()=>assert.deepEqual(diff({type:['number','null']},{type:['null','number']}),[]));
+test('object enum values canonical',()=>assert.deepEqual(diff({enum:[{a:1,b:2}]},{enum:[{b:2,a:1}]}),[]));
+test('schema prototype keys',()=>{const a=JSON.parse('{"properties":{"__proto__":{"type":"number"}}}'),b=JSON.parse('{"properties":{"__proto__":{"type":"integer"}}}');assert.equal(diff(a,b)[0].path,'/properties/__proto__/type');assert.equal({}.polluted,undefined);});

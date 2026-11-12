@@ -1,0 +1,13 @@
+import test from 'node:test';
+import assert from 'node:assert/strict';
+import {Writable} from 'node:stream';
+import {mkdtemp,readFile,rm} from 'node:fs/promises';
+import path from 'node:path';
+import {mainInternal as main} from '../src/cli.js';
+const sink=()=>{let v='';return {stream:new Writable({write(c,e,cb){v+=c;cb();}}),get value(){return v;}}};
+const run=async(argv, fake, env={})=>{const out=sink(),err=sink();const code=await main(argv,{stdout:out.stream,stderr:err.stream},{takeSnapshot:fake,env});return {code,out:out.value,err:err.value};};
+const snapshot={format:'joons-mcp-diff/snapshot',schemaVersion:1,createdAt:'2026-01-01T00:00:00Z',tool:{name:'joons-mcp-diff',version:'0.1.0'},label:null,server:{name:'test',version:'1',protocolVersion:'1'},tools:[],stats:{toolCount:0,pages:1}};
+test('all stdio tail arguments remain intact',async()=>{let target;const r=await run(['snapshot','stdio','--','node','argument with spaces','--','--env','x'],async t=>(target=t,snapshot));assert.equal(r.code,0);assert.deepEqual(target.args,['argument with spaces','--','--env','x']);});
+test('non-secret env and label are passed',async()=>{let options,target;const r=await run(['snapshot','stdio','--env','PUBLIC','--label','named','--','node'],async(t,o)=>(target=t,options=o,{...snapshot,label:o.label,server:{name:t.env.PUBLIC}}),{PUBLIC:'printable value'});assert.equal(r.code,0);assert.equal(target.env.PUBLIC,'printable value');assert.equal(options.label,'named');assert.match(r.out,/printable value/);});
+for(const transport of ['stdio','http']) for(const throws of [false,true]) test(`${transport} secret redacted on ${throws?'failure':'success'}`,async()=>{const secret='s3cr3t-value';const args=transport==='stdio'?['snapshot','stdio','--secret-env','TOKEN','--','node']:['snapshot','http','https://example.test','--header','Authorization=TOKEN'];const r=await run(args,async(t,o)=>{assert.equal(transport==='stdio'?t.secretEnv.TOKEN:t.headers.Authorization,secret);if(throws)throw Error(secret);assert.deepEqual(o.secrets,[secret]); return {...snapshot,server:{name:'[REDACTED]'}};},{TOKEN:secret});assert.equal(r.code,throws?2:0);assert.ok(!r.out.includes(secret));assert.ok(!r.err.includes(secret));});
+test('output file is canonical pretty JSON with trailing newline',async()=>{const dir=await mkdtemp(path.join(process.cwd(),'w3b-'));try{const file=path.join(dir,'snapshot.json');const r=await run(['snapshot','stdio','-o',file,'--','node'],async()=>snapshot);const text=await readFile(file,'utf8');assert.equal(r.out,'');assert.equal(r.code,0);assert.ok(text.endsWith('\n'));assert.deepEqual(Object.keys(JSON.parse(text)),Object.keys(snapshot).sort());assert.match(text,/\n  "createdAt"/);}finally{await rm(dir,{recursive:true,force:true});}});

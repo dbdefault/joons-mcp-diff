@@ -1,0 +1,4256 @@
+[
+  {
+    "id": "RS2N001",
+    "name": "optional constrained absent",
+    "expected": "UNKNOWN",
+    "reason": "",
+    "before": {
+      "format": "joons-mcp-diff/snapshot",
+      "schemaVersion": 1,
+      "createdAt": "2026-11-12T00:00:00Z",
+      "tool": {
+        "name": "review",
+        "version": "1"
+      },
+      "label": null,
+      "server": {
+        "name": "review",
+        "version": "1",
+        "protocolVersion": "1"
+      },
+      "tools": [
+        {
+          "name": "test",
+          "inputSchema": {
+            "type": "object"
+          },
+          "title": null,
+          "description": null,
+          "annotations": null,
+          "outputSchema": null
+        }
+      ],
+      "stats": {
+        "toolCount": 1,
+        "pages": 1
+      }
+    },
+    "after": {
+      "format": "joons-mcp-diff/snapshot",
+      "schemaVersion": 1,
+      "createdAt": "2026-11-12T00:00:00Z",
+      "tool": {
+        "name": "review",
+        "version": "1"
+      },
+      "label": null,
+      "server": {
+        "name": "review",
+        "version": "1",
+        "protocolVersion": "1"
+      },
+      "tools": [
+        {
+          "name": "test",
+          "inputSchema": {
+            "type": "object",
+            "properties": {
+              "x": {
+                "type": "string"
+              }
+            }
+          },
+          "title": null,
+          "description": null,
+          "annotations": null,
+          "outputSchema": null
+        }
+      ],
+      "stats": {
+        "toolCount": 1,
+        "pages": 1
+      }
+    }
+  },
+  {
+    "id": "RS2N002",
+    "name": "optional empty absent",
+    "expected": "NON_BREAKING",
+    "reason": "",
+    "before": {
+      "format": "joons-mcp-diff/snapshot",
+      "schemaVersion": 1,
+      "createdAt": "2026-11-12T00:00:00Z",
+      "tool": {
+        "name": "review",
+        "version": "1"
+      },
+      "label": null,
+      "server": {
+        "name": "review",
+        "version": "1",
+        "protocolVersion": "1"
+      },
+      "tools": [
+        {
+          "name": "test",
+          "inputSchema": {
+            "type": "object"
+          },
+          "title": null,
+          "description": null,
+          "annotations": null,
+          "outputSchema": null
+        }
+      ],
+      "stats": {
+        "toolCount": 1,
+        "pages": 1
+      }
+    },
+    "after": {
+      "format": "joons-mcp-diff/snapshot",
+      "schemaVersion": 1,
+      "createdAt": "2026-11-12T00:00:00Z",
+      "tool": {
+        "name": "review",
+        "version": "1"
+      },
+      "label": null,
+      "server": {
+        "name": "review",
+        "version": "1",
+        "protocolVersion": "1"
+      },
+      "tools": [
+        {
+          "name": "test",
+          "inputSchema": {
+            "type": "object",
+            "properties": {
+              "x": {}
+            }
+          },
+          "title": null,
+          "description": null,
+          "annotations": null,
+          "outputSchema": null
+        }
+      ],
+      "stats": {
+        "toolCount": 1,
+        "pages": 1
+      }
+    }
+  },
+  {
+    "id": "RS2N003",
+    "name": "optional false absent",
+    "expected": "UNKNOWN",
+    "reason": "",
+    "before": {
+      "format": "joons-mcp-diff/snapshot",
+      "schemaVersion": 1,
+      "createdAt": "2026-11-12T00:00:00Z",
+      "tool": {
+        "name": "review",
+        "version": "1"
+      },
+      "label": null,
+      "server": {
+        "name": "review",
+        "version": "1",
+        "protocolVersion": "1"
+      },
+      "tools": [
+        {
+          "name": "test",
+          "inputSchema": {
+            "type": "object"
+          },
+          "title": null,
+          "description": null,
+          "annotations": null,
+          "outputSchema": null
+        }
+      ],
+      "stats": {
+        "toolCount": 1,
+        "pages": 1
+      }
+    },
+    "after": {
+      "format": "joons-mcp-diff/snapshot",
+      "schemaVersion": 1,
+      "createdAt": "2026-11-12T00:00:00Z",
+      "tool": {
+        "name": "review",
+        "version": "1"
+      },
+      "label": null,
+      "server": {
+        "name": "review",
+        "version": "1",
+        "protocolVersion": "1"
+      },
+      "tools": [
+        {
+          "name": "test",
+          "inputSchema": {
+            "type": "object",
+            "properties": {
+              "x": false
+            }
+          },
+          "title": null,
+          "description": null,
+          "annotations": null,
+          "outputSchema": null
+        }
+      ],
+      "stats": {
+        "toolCount": 1,
+        "pages": 1
+      }
+    }
+  },
+  {
+    "id": "RS2N004",
+    "name": "optional constrained true",
+    "expected": "UNKNOWN",
+    "reason": "",
+    "before": {
+      "format": "joons-mcp-diff/snapshot",
+      "schemaVersion": 1,
+      "createdAt": "2026-11-12T00:00:00Z",
+      "tool": {
+        "name": "review",
+        "version": "1"
+      },
+      "label": null,
+      "server": {
+        "name": "review",
+        "version": "1",
+        "protocolVersion": "1"
+      },
+      "tools": [
+        {
+          "name": "test",
+          "inputSchema": {
+            "type": "object",
+            "additionalProperties": true
+          },
+          "title": null,
+          "description": null,
+          "annotations": null,
+          "outputSchema": null
+        }
+      ],
+      "stats": {
+        "toolCount": 1,
+        "pages": 1
+      }
+    },
+    "after": {
+      "format": "joons-mcp-diff/snapshot",
+      "schemaVersion": 1,
+      "createdAt": "2026-11-12T00:00:00Z",
+      "tool": {
+        "name": "review",
+        "version": "1"
+      },
+      "label": null,
+      "server": {
+        "name": "review",
+        "version": "1",
+        "protocolVersion": "1"
+      },
+      "tools": [
+        {
+          "name": "test",
+          "inputSchema": {
+            "type": "object",
+            "additionalProperties": true,
+            "properties": {
+              "x": {
+                "type": "string"
+              }
+            }
+          },
+          "title": null,
+          "description": null,
+          "annotations": null,
+          "outputSchema": null
+        }
+      ],
+      "stats": {
+        "toolCount": 1,
+        "pages": 1
+      }
+    }
+  },
+  {
+    "id": "RS2N005",
+    "name": "optional empty true",
+    "expected": "NON_BREAKING",
+    "reason": "",
+    "before": {
+      "format": "joons-mcp-diff/snapshot",
+      "schemaVersion": 1,
+      "createdAt": "2026-11-12T00:00:00Z",
+      "tool": {
+        "name": "review",
+        "version": "1"
+      },
+      "label": null,
+      "server": {
+        "name": "review",
+        "version": "1",
+        "protocolVersion": "1"
+      },
+      "tools": [
+        {
+          "name": "test",
+          "inputSchema": {
+            "type": "object",
+            "additionalProperties": true
+          },
+          "title": null,
+          "description": null,
+          "annotations": null,
+          "outputSchema": null
+        }
+      ],
+      "stats": {
+        "toolCount": 1,
+        "pages": 1
+      }
+    },
+    "after": {
+      "format": "joons-mcp-diff/snapshot",
+      "schemaVersion": 1,
+      "createdAt": "2026-11-12T00:00:00Z",
+      "tool": {
+        "name": "review",
+        "version": "1"
+      },
+      "label": null,
+      "server": {
+        "name": "review",
+        "version": "1",
+        "protocolVersion": "1"
+      },
+      "tools": [
+        {
+          "name": "test",
+          "inputSchema": {
+            "type": "object",
+            "additionalProperties": true,
+            "properties": {
+              "x": {}
+            }
+          },
+          "title": null,
+          "description": null,
+          "annotations": null,
+          "outputSchema": null
+        }
+      ],
+      "stats": {
+        "toolCount": 1,
+        "pages": 1
+      }
+    }
+  },
+  {
+    "id": "RS2N006",
+    "name": "optional false true",
+    "expected": "UNKNOWN",
+    "reason": "",
+    "before": {
+      "format": "joons-mcp-diff/snapshot",
+      "schemaVersion": 1,
+      "createdAt": "2026-11-12T00:00:00Z",
+      "tool": {
+        "name": "review",
+        "version": "1"
+      },
+      "label": null,
+      "server": {
+        "name": "review",
+        "version": "1",
+        "protocolVersion": "1"
+      },
+      "tools": [
+        {
+          "name": "test",
+          "inputSchema": {
+            "type": "object",
+            "additionalProperties": true
+          },
+          "title": null,
+          "description": null,
+          "annotations": null,
+          "outputSchema": null
+        }
+      ],
+      "stats": {
+        "toolCount": 1,
+        "pages": 1
+      }
+    },
+    "after": {
+      "format": "joons-mcp-diff/snapshot",
+      "schemaVersion": 1,
+      "createdAt": "2026-11-12T00:00:00Z",
+      "tool": {
+        "name": "review",
+        "version": "1"
+      },
+      "label": null,
+      "server": {
+        "name": "review",
+        "version": "1",
+        "protocolVersion": "1"
+      },
+      "tools": [
+        {
+          "name": "test",
+          "inputSchema": {
+            "type": "object",
+            "additionalProperties": true,
+            "properties": {
+              "x": false
+            }
+          },
+          "title": null,
+          "description": null,
+          "annotations": null,
+          "outputSchema": null
+        }
+      ],
+      "stats": {
+        "toolCount": 1,
+        "pages": 1
+      }
+    }
+  },
+  {
+    "id": "RS2N007",
+    "name": "optional constrained false",
+    "expected": "NON_BREAKING",
+    "reason": "",
+    "before": {
+      "format": "joons-mcp-diff/snapshot",
+      "schemaVersion": 1,
+      "createdAt": "2026-11-12T00:00:00Z",
+      "tool": {
+        "name": "review",
+        "version": "1"
+      },
+      "label": null,
+      "server": {
+        "name": "review",
+        "version": "1",
+        "protocolVersion": "1"
+      },
+      "tools": [
+        {
+          "name": "test",
+          "inputSchema": {
+            "type": "object",
+            "additionalProperties": false
+          },
+          "title": null,
+          "description": null,
+          "annotations": null,
+          "outputSchema": null
+        }
+      ],
+      "stats": {
+        "toolCount": 1,
+        "pages": 1
+      }
+    },
+    "after": {
+      "format": "joons-mcp-diff/snapshot",
+      "schemaVersion": 1,
+      "createdAt": "2026-11-12T00:00:00Z",
+      "tool": {
+        "name": "review",
+        "version": "1"
+      },
+      "label": null,
+      "server": {
+        "name": "review",
+        "version": "1",
+        "protocolVersion": "1"
+      },
+      "tools": [
+        {
+          "name": "test",
+          "inputSchema": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+              "x": {
+                "type": "string"
+              }
+            }
+          },
+          "title": null,
+          "description": null,
+          "annotations": null,
+          "outputSchema": null
+        }
+      ],
+      "stats": {
+        "toolCount": 1,
+        "pages": 1
+      }
+    }
+  },
+  {
+    "id": "RS2N008",
+    "name": "optional empty false",
+    "expected": "NON_BREAKING",
+    "reason": "",
+    "before": {
+      "format": "joons-mcp-diff/snapshot",
+      "schemaVersion": 1,
+      "createdAt": "2026-11-12T00:00:00Z",
+      "tool": {
+        "name": "review",
+        "version": "1"
+      },
+      "label": null,
+      "server": {
+        "name": "review",
+        "version": "1",
+        "protocolVersion": "1"
+      },
+      "tools": [
+        {
+          "name": "test",
+          "inputSchema": {
+            "type": "object",
+            "additionalProperties": false
+          },
+          "title": null,
+          "description": null,
+          "annotations": null,
+          "outputSchema": null
+        }
+      ],
+      "stats": {
+        "toolCount": 1,
+        "pages": 1
+      }
+    },
+    "after": {
+      "format": "joons-mcp-diff/snapshot",
+      "schemaVersion": 1,
+      "createdAt": "2026-11-12T00:00:00Z",
+      "tool": {
+        "name": "review",
+        "version": "1"
+      },
+      "label": null,
+      "server": {
+        "name": "review",
+        "version": "1",
+        "protocolVersion": "1"
+      },
+      "tools": [
+        {
+          "name": "test",
+          "inputSchema": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+              "x": {}
+            }
+          },
+          "title": null,
+          "description": null,
+          "annotations": null,
+          "outputSchema": null
+        }
+      ],
+      "stats": {
+        "toolCount": 1,
+        "pages": 1
+      }
+    }
+  },
+  {
+    "id": "RS2N009",
+    "name": "optional false false",
+    "expected": "UNCHANGED",
+    "reason": "",
+    "before": {
+      "format": "joons-mcp-diff/snapshot",
+      "schemaVersion": 1,
+      "createdAt": "2026-11-12T00:00:00Z",
+      "tool": {
+        "name": "review",
+        "version": "1"
+      },
+      "label": null,
+      "server": {
+        "name": "review",
+        "version": "1",
+        "protocolVersion": "1"
+      },
+      "tools": [
+        {
+          "name": "test",
+          "inputSchema": {
+            "type": "object",
+            "additionalProperties": false
+          },
+          "title": null,
+          "description": null,
+          "annotations": null,
+          "outputSchema": null
+        }
+      ],
+      "stats": {
+        "toolCount": 1,
+        "pages": 1
+      }
+    },
+    "after": {
+      "format": "joons-mcp-diff/snapshot",
+      "schemaVersion": 1,
+      "createdAt": "2026-11-12T00:00:00Z",
+      "tool": {
+        "name": "review",
+        "version": "1"
+      },
+      "label": null,
+      "server": {
+        "name": "review",
+        "version": "1",
+        "protocolVersion": "1"
+      },
+      "tools": [
+        {
+          "name": "test",
+          "inputSchema": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+              "x": false
+            }
+          },
+          "title": null,
+          "description": null,
+          "annotations": null,
+          "outputSchema": null
+        }
+      ],
+      "stats": {
+        "toolCount": 1,
+        "pages": 1
+      }
+    }
+  },
+  {
+    "id": "RS2N010",
+    "name": "optional constrained schema",
+    "expected": "UNKNOWN",
+    "reason": "",
+    "before": {
+      "format": "joons-mcp-diff/snapshot",
+      "schemaVersion": 1,
+      "createdAt": "2026-11-12T00:00:00Z",
+      "tool": {
+        "name": "review",
+        "version": "1"
+      },
+      "label": null,
+      "server": {
+        "name": "review",
+        "version": "1",
+        "protocolVersion": "1"
+      },
+      "tools": [
+        {
+          "name": "test",
+          "inputSchema": {
+            "type": "object",
+            "additionalProperties": {
+              "type": "number"
+            }
+          },
+          "title": null,
+          "description": null,
+          "annotations": null,
+          "outputSchema": null
+        }
+      ],
+      "stats": {
+        "toolCount": 1,
+        "pages": 1
+      }
+    },
+    "after": {
+      "format": "joons-mcp-diff/snapshot",
+      "schemaVersion": 1,
+      "createdAt": "2026-11-12T00:00:00Z",
+      "tool": {
+        "name": "review",
+        "version": "1"
+      },
+      "label": null,
+      "server": {
+        "name": "review",
+        "version": "1",
+        "protocolVersion": "1"
+      },
+      "tools": [
+        {
+          "name": "test",
+          "inputSchema": {
+            "type": "object",
+            "additionalProperties": {
+              "type": "number"
+            },
+            "properties": {
+              "x": {
+                "type": "string"
+              }
+            }
+          },
+          "title": null,
+          "description": null,
+          "annotations": null,
+          "outputSchema": null
+        }
+      ],
+      "stats": {
+        "toolCount": 1,
+        "pages": 1
+      }
+    }
+  },
+  {
+    "id": "RS2N011",
+    "name": "optional empty schema",
+    "expected": "NON_BREAKING",
+    "reason": "",
+    "before": {
+      "format": "joons-mcp-diff/snapshot",
+      "schemaVersion": 1,
+      "createdAt": "2026-11-12T00:00:00Z",
+      "tool": {
+        "name": "review",
+        "version": "1"
+      },
+      "label": null,
+      "server": {
+        "name": "review",
+        "version": "1",
+        "protocolVersion": "1"
+      },
+      "tools": [
+        {
+          "name": "test",
+          "inputSchema": {
+            "type": "object",
+            "additionalProperties": {
+              "type": "number"
+            }
+          },
+          "title": null,
+          "description": null,
+          "annotations": null,
+          "outputSchema": null
+        }
+      ],
+      "stats": {
+        "toolCount": 1,
+        "pages": 1
+      }
+    },
+    "after": {
+      "format": "joons-mcp-diff/snapshot",
+      "schemaVersion": 1,
+      "createdAt": "2026-11-12T00:00:00Z",
+      "tool": {
+        "name": "review",
+        "version": "1"
+      },
+      "label": null,
+      "server": {
+        "name": "review",
+        "version": "1",
+        "protocolVersion": "1"
+      },
+      "tools": [
+        {
+          "name": "test",
+          "inputSchema": {
+            "type": "object",
+            "additionalProperties": {
+              "type": "number"
+            },
+            "properties": {
+              "x": {}
+            }
+          },
+          "title": null,
+          "description": null,
+          "annotations": null,
+          "outputSchema": null
+        }
+      ],
+      "stats": {
+        "toolCount": 1,
+        "pages": 1
+      }
+    }
+  },
+  {
+    "id": "RS2N012",
+    "name": "optional false schema",
+    "expected": "UNKNOWN",
+    "reason": "",
+    "before": {
+      "format": "joons-mcp-diff/snapshot",
+      "schemaVersion": 1,
+      "createdAt": "2026-11-12T00:00:00Z",
+      "tool": {
+        "name": "review",
+        "version": "1"
+      },
+      "label": null,
+      "server": {
+        "name": "review",
+        "version": "1",
+        "protocolVersion": "1"
+      },
+      "tools": [
+        {
+          "name": "test",
+          "inputSchema": {
+            "type": "object",
+            "additionalProperties": {
+              "type": "number"
+            }
+          },
+          "title": null,
+          "description": null,
+          "annotations": null,
+          "outputSchema": null
+        }
+      ],
+      "stats": {
+        "toolCount": 1,
+        "pages": 1
+      }
+    },
+    "after": {
+      "format": "joons-mcp-diff/snapshot",
+      "schemaVersion": 1,
+      "createdAt": "2026-11-12T00:00:00Z",
+      "tool": {
+        "name": "review",
+        "version": "1"
+      },
+      "label": null,
+      "server": {
+        "name": "review",
+        "version": "1",
+        "protocolVersion": "1"
+      },
+      "tools": [
+        {
+          "name": "test",
+          "inputSchema": {
+            "type": "object",
+            "additionalProperties": {
+              "type": "number"
+            },
+            "properties": {
+              "x": false
+            }
+          },
+          "title": null,
+          "description": null,
+          "annotations": null,
+          "outputSchema": null
+        }
+      ],
+      "stats": {
+        "toolCount": 1,
+        "pages": 1
+      }
+    }
+  },
+  {
+    "id": "RS2N013",
+    "name": "optional pattern overlap",
+    "expected": "UNKNOWN",
+    "reason": "",
+    "before": {
+      "format": "joons-mcp-diff/snapshot",
+      "schemaVersion": 1,
+      "createdAt": "2026-11-12T00:00:00Z",
+      "tool": {
+        "name": "review",
+        "version": "1"
+      },
+      "label": null,
+      "server": {
+        "name": "review",
+        "version": "1",
+        "protocolVersion": "1"
+      },
+      "tools": [
+        {
+          "name": "test",
+          "inputSchema": {
+            "type": "object",
+            "additionalProperties": false,
+            "patternProperties": {
+              "^x": {
+                "type": "number"
+              }
+            }
+          },
+          "title": null,
+          "description": null,
+          "annotations": null,
+          "outputSchema": null
+        }
+      ],
+      "stats": {
+        "toolCount": 1,
+        "pages": 1
+      }
+    },
+    "after": {
+      "format": "joons-mcp-diff/snapshot",
+      "schemaVersion": 1,
+      "createdAt": "2026-11-12T00:00:00Z",
+      "tool": {
+        "name": "review",
+        "version": "1"
+      },
+      "label": null,
+      "server": {
+        "name": "review",
+        "version": "1",
+        "protocolVersion": "1"
+      },
+      "tools": [
+        {
+          "name": "test",
+          "inputSchema": {
+            "type": "object",
+            "additionalProperties": false,
+            "patternProperties": {
+              "^x": {
+                "type": "number"
+              }
+            },
+            "properties": {
+              "x": {
+                "type": "string"
+              }
+            }
+          },
+          "title": null,
+          "description": null,
+          "annotations": null,
+          "outputSchema": null
+        }
+      ],
+      "stats": {
+        "toolCount": 1,
+        "pages": 1
+      }
+    }
+  },
+  {
+    "id": "RS2N014",
+    "name": "intersection shrinking",
+    "expected": "BREAKING",
+    "reason": "",
+    "before": {
+      "format": "joons-mcp-diff/snapshot",
+      "schemaVersion": 1,
+      "createdAt": "2026-11-12T00:00:00Z",
+      "tool": {
+        "name": "review",
+        "version": "1"
+      },
+      "label": null,
+      "server": {
+        "name": "review",
+        "version": "1",
+        "protocolVersion": "1"
+      },
+      "tools": [
+        {
+          "name": "test",
+          "inputSchema": {
+            "enum": [
+              1,
+              2
+            ],
+            "const": 1
+          },
+          "title": null,
+          "description": null,
+          "annotations": null,
+          "outputSchema": null
+        }
+      ],
+      "stats": {
+        "toolCount": 1,
+        "pages": 1
+      }
+    },
+    "after": {
+      "format": "joons-mcp-diff/snapshot",
+      "schemaVersion": 1,
+      "createdAt": "2026-11-12T00:00:00Z",
+      "tool": {
+        "name": "review",
+        "version": "1"
+      },
+      "label": null,
+      "server": {
+        "name": "review",
+        "version": "1",
+        "protocolVersion": "1"
+      },
+      "tools": [
+        {
+          "name": "test",
+          "inputSchema": {
+            "enum": [
+              2
+            ],
+            "const": 1
+          },
+          "title": null,
+          "description": null,
+          "annotations": null,
+          "outputSchema": null
+        }
+      ],
+      "stats": {
+        "toolCount": 1,
+        "pages": 1
+      }
+    }
+  },
+  {
+    "id": "RS2N015",
+    "name": "intersection same despite enum shrink",
+    "expected": "UNCHANGED",
+    "reason": "",
+    "before": {
+      "format": "joons-mcp-diff/snapshot",
+      "schemaVersion": 1,
+      "createdAt": "2026-11-12T00:00:00Z",
+      "tool": {
+        "name": "review",
+        "version": "1"
+      },
+      "label": null,
+      "server": {
+        "name": "review",
+        "version": "1",
+        "protocolVersion": "1"
+      },
+      "tools": [
+        {
+          "name": "test",
+          "inputSchema": {
+            "enum": [
+              1,
+              2
+            ],
+            "const": 1
+          },
+          "title": null,
+          "description": null,
+          "annotations": null,
+          "outputSchema": null
+        }
+      ],
+      "stats": {
+        "toolCount": 1,
+        "pages": 1
+      }
+    },
+    "after": {
+      "format": "joons-mcp-diff/snapshot",
+      "schemaVersion": 1,
+      "createdAt": "2026-11-12T00:00:00Z",
+      "tool": {
+        "name": "review",
+        "version": "1"
+      },
+      "label": null,
+      "server": {
+        "name": "review",
+        "version": "1",
+        "protocolVersion": "1"
+      },
+      "tools": [
+        {
+          "name": "test",
+          "inputSchema": {
+            "enum": [
+              1
+            ],
+            "const": 1
+          },
+          "title": null,
+          "description": null,
+          "annotations": null,
+          "outputSchema": null
+        }
+      ],
+      "stats": {
+        "toolCount": 1,
+        "pages": 1
+      }
+    }
+  },
+  {
+    "id": "RS2N016",
+    "name": "intersection empty widening",
+    "expected": "NON_BREAKING",
+    "reason": "",
+    "before": {
+      "format": "joons-mcp-diff/snapshot",
+      "schemaVersion": 1,
+      "createdAt": "2026-11-12T00:00:00Z",
+      "tool": {
+        "name": "review",
+        "version": "1"
+      },
+      "label": null,
+      "server": {
+        "name": "review",
+        "version": "1",
+        "protocolVersion": "1"
+      },
+      "tools": [
+        {
+          "name": "test",
+          "inputSchema": {
+            "enum": [
+              2
+            ],
+            "const": 1
+          },
+          "title": null,
+          "description": null,
+          "annotations": null,
+          "outputSchema": null
+        }
+      ],
+      "stats": {
+        "toolCount": 1,
+        "pages": 1
+      }
+    },
+    "after": {
+      "format": "joons-mcp-diff/snapshot",
+      "schemaVersion": 1,
+      "createdAt": "2026-11-12T00:00:00Z",
+      "tool": {
+        "name": "review",
+        "version": "1"
+      },
+      "label": null,
+      "server": {
+        "name": "review",
+        "version": "1",
+        "protocolVersion": "1"
+      },
+      "tools": [
+        {
+          "name": "test",
+          "inputSchema": {
+            "enum": [
+              1
+            ],
+            "const": 1
+          },
+          "title": null,
+          "description": null,
+          "annotations": null,
+          "outputSchema": null
+        }
+      ],
+      "stats": {
+        "toolCount": 1,
+        "pages": 1
+      }
+    }
+  },
+  {
+    "id": "RS2N017",
+    "name": "object const intersection key order",
+    "expected": "UNCHANGED",
+    "reason": "",
+    "before": {
+      "format": "joons-mcp-diff/snapshot",
+      "schemaVersion": 1,
+      "createdAt": "2026-11-12T00:00:00Z",
+      "tool": {
+        "name": "review",
+        "version": "1"
+      },
+      "label": null,
+      "server": {
+        "name": "review",
+        "version": "1",
+        "protocolVersion": "1"
+      },
+      "tools": [
+        {
+          "name": "test",
+          "inputSchema": {
+            "const": {
+              "a": 1,
+              "b": 2
+            },
+            "enum": [
+              {
+                "b": 2,
+                "a": 1
+              }
+            ]
+          },
+          "title": null,
+          "description": null,
+          "annotations": null,
+          "outputSchema": null
+        }
+      ],
+      "stats": {
+        "toolCount": 1,
+        "pages": 1
+      }
+    },
+    "after": {
+      "format": "joons-mcp-diff/snapshot",
+      "schemaVersion": 1,
+      "createdAt": "2026-11-12T00:00:00Z",
+      "tool": {
+        "name": "review",
+        "version": "1"
+      },
+      "label": null,
+      "server": {
+        "name": "review",
+        "version": "1",
+        "protocolVersion": "1"
+      },
+      "tools": [
+        {
+          "name": "test",
+          "inputSchema": {
+            "const": {
+              "b": 2,
+              "a": 1
+            },
+            "enum": [
+              {
+                "a": 1,
+                "b": 2
+              }
+            ]
+          },
+          "title": null,
+          "description": null,
+          "annotations": null,
+          "outputSchema": null
+        }
+      ],
+      "stats": {
+        "toolCount": 1,
+        "pages": 1
+      }
+    }
+  },
+  {
+    "id": "RS2N018",
+    "name": "literal nested arrays order",
+    "expected": "BREAKING",
+    "reason": "",
+    "before": {
+      "format": "joons-mcp-diff/snapshot",
+      "schemaVersion": 1,
+      "createdAt": "2026-11-12T00:00:00Z",
+      "tool": {
+        "name": "review",
+        "version": "1"
+      },
+      "label": null,
+      "server": {
+        "name": "review",
+        "version": "1",
+        "protocolVersion": "1"
+      },
+      "tools": [
+        {
+          "name": "test",
+          "inputSchema": {
+            "enum": [
+              [
+                [
+                  1,
+                  2
+                ]
+              ]
+            ]
+          },
+          "title": null,
+          "description": null,
+          "annotations": null,
+          "outputSchema": null
+        }
+      ],
+      "stats": {
+        "toolCount": 1,
+        "pages": 1
+      }
+    },
+    "after": {
+      "format": "joons-mcp-diff/snapshot",
+      "schemaVersion": 1,
+      "createdAt": "2026-11-12T00:00:00Z",
+      "tool": {
+        "name": "review",
+        "version": "1"
+      },
+      "label": null,
+      "server": {
+        "name": "review",
+        "version": "1",
+        "protocolVersion": "1"
+      },
+      "tools": [
+        {
+          "name": "test",
+          "inputSchema": {
+            "enum": [
+              [
+                [
+                  2,
+                  1
+                ]
+              ]
+            ]
+          },
+          "title": null,
+          "description": null,
+          "annotations": null,
+          "outputSchema": null
+        }
+      ],
+      "stats": {
+        "toolCount": 1,
+        "pages": 1
+      }
+    }
+  },
+  {
+    "id": "RS2N019",
+    "name": "literal ref not resolved",
+    "expected": "BREAKING",
+    "reason": "",
+    "before": {
+      "format": "joons-mcp-diff/snapshot",
+      "schemaVersion": 1,
+      "createdAt": "2026-11-12T00:00:00Z",
+      "tool": {
+        "name": "review",
+        "version": "1"
+      },
+      "label": null,
+      "server": {
+        "name": "review",
+        "version": "1",
+        "protocolVersion": "1"
+      },
+      "tools": [
+        {
+          "name": "test",
+          "inputSchema": {
+            "enum": [
+              {
+                "$ref": "#/missing",
+                "title": "a"
+              }
+            ]
+          },
+          "title": null,
+          "description": null,
+          "annotations": null,
+          "outputSchema": null
+        }
+      ],
+      "stats": {
+        "toolCount": 1,
+        "pages": 1
+      }
+    },
+    "after": {
+      "format": "joons-mcp-diff/snapshot",
+      "schemaVersion": 1,
+      "createdAt": "2026-11-12T00:00:00Z",
+      "tool": {
+        "name": "review",
+        "version": "1"
+      },
+      "label": null,
+      "server": {
+        "name": "review",
+        "version": "1",
+        "protocolVersion": "1"
+      },
+      "tools": [
+        {
+          "name": "test",
+          "inputSchema": {
+            "enum": [
+              {
+                "$ref": "#/missing",
+                "title": "b"
+              }
+            ]
+          },
+          "title": null,
+          "description": null,
+          "annotations": null,
+          "outputSchema": null
+        }
+      ],
+      "stats": {
+        "toolCount": 1,
+        "pages": 1
+      }
+    }
+  },
+  {
+    "id": "RS2N020",
+    "name": "numeric 1 vs 1.0",
+    "expected": "UNCHANGED",
+    "reason": "",
+    "before": {
+      "format": "joons-mcp-diff/snapshot",
+      "schemaVersion": 1,
+      "createdAt": "2026-11-12T00:00:00Z",
+      "tool": {
+        "name": "review",
+        "version": "1"
+      },
+      "label": null,
+      "server": {
+        "name": "review",
+        "version": "1",
+        "protocolVersion": "1"
+      },
+      "tools": [
+        {
+          "name": "test",
+          "inputSchema": {
+            "enum": [
+              1
+            ]
+          },
+          "title": null,
+          "description": null,
+          "annotations": null,
+          "outputSchema": null
+        }
+      ],
+      "stats": {
+        "toolCount": 1,
+        "pages": 1
+      }
+    },
+    "after": {
+      "format": "joons-mcp-diff/snapshot",
+      "schemaVersion": 1,
+      "createdAt": "2026-11-12T00:00:00Z",
+      "tool": {
+        "name": "review",
+        "version": "1"
+      },
+      "label": null,
+      "server": {
+        "name": "review",
+        "version": "1",
+        "protocolVersion": "1"
+      },
+      "tools": [
+        {
+          "name": "test",
+          "inputSchema": {
+            "enum": [
+              1
+            ]
+          },
+          "title": null,
+          "description": null,
+          "annotations": null,
+          "outputSchema": null
+        }
+      ],
+      "stats": {
+        "toolCount": 1,
+        "pages": 1
+      }
+    }
+  },
+  {
+    "id": "RS2N021",
+    "name": "negative zero equals zero",
+    "expected": "UNCHANGED",
+    "reason": "",
+    "before": {
+      "format": "joons-mcp-diff/snapshot",
+      "schemaVersion": 1,
+      "createdAt": "2026-11-12T00:00:00Z",
+      "tool": {
+        "name": "review",
+        "version": "1"
+      },
+      "label": null,
+      "server": {
+        "name": "review",
+        "version": "1",
+        "protocolVersion": "1"
+      },
+      "tools": [
+        {
+          "name": "test",
+          "inputSchema": {
+            "const": 0
+          },
+          "title": null,
+          "description": null,
+          "annotations": null,
+          "outputSchema": null
+        }
+      ],
+      "stats": {
+        "toolCount": 1,
+        "pages": 1
+      }
+    },
+    "after": {
+      "format": "joons-mcp-diff/snapshot",
+      "schemaVersion": 1,
+      "createdAt": "2026-11-12T00:00:00Z",
+      "tool": {
+        "name": "review",
+        "version": "1"
+      },
+      "label": null,
+      "server": {
+        "name": "review",
+        "version": "1",
+        "protocolVersion": "1"
+      },
+      "tools": [
+        {
+          "name": "test",
+          "inputSchema": {
+            "const": 0
+          },
+          "title": null,
+          "description": null,
+          "annotations": null,
+          "outputSchema": null
+        }
+      ],
+      "stats": {
+        "toolCount": 1,
+        "pages": 1
+      }
+    }
+  },
+  {
+    "id": "RS2N022",
+    "name": "finite unicode length",
+    "expected": "BREAKING",
+    "reason": "",
+    "before": {
+      "format": "joons-mcp-diff/snapshot",
+      "schemaVersion": 1,
+      "createdAt": "2026-11-12T00:00:00Z",
+      "tool": {
+        "name": "review",
+        "version": "1"
+      },
+      "label": null,
+      "server": {
+        "name": "review",
+        "version": "1",
+        "protocolVersion": "1"
+      },
+      "tools": [
+        {
+          "name": "test",
+          "inputSchema": {
+            "enum": [
+              "\ud83d\ude00"
+            ],
+            "minLength": 1
+          },
+          "title": null,
+          "description": null,
+          "annotations": null,
+          "outputSchema": null
+        }
+      ],
+      "stats": {
+        "toolCount": 1,
+        "pages": 1
+      }
+    },
+    "after": {
+      "format": "joons-mcp-diff/snapshot",
+      "schemaVersion": 1,
+      "createdAt": "2026-11-12T00:00:00Z",
+      "tool": {
+        "name": "review",
+        "version": "1"
+      },
+      "label": null,
+      "server": {
+        "name": "review",
+        "version": "1",
+        "protocolVersion": "1"
+      },
+      "tools": [
+        {
+          "name": "test",
+          "inputSchema": {
+            "enum": [
+              "\ud83d\ude00"
+            ],
+            "minLength": 2
+          },
+          "title": null,
+          "description": null,
+          "annotations": null,
+          "outputSchema": null
+        }
+      ],
+      "stats": {
+        "toolCount": 1,
+        "pages": 1
+      }
+    }
+  },
+  {
+    "id": "RS2N023",
+    "name": "finite array length",
+    "expected": "BREAKING",
+    "reason": "",
+    "before": {
+      "format": "joons-mcp-diff/snapshot",
+      "schemaVersion": 1,
+      "createdAt": "2026-11-12T00:00:00Z",
+      "tool": {
+        "name": "review",
+        "version": "1"
+      },
+      "label": null,
+      "server": {
+        "name": "review",
+        "version": "1",
+        "protocolVersion": "1"
+      },
+      "tools": [
+        {
+          "name": "test",
+          "inputSchema": {
+            "enum": [
+              [
+                1
+              ],
+              [
+                1,
+                2
+              ]
+            ],
+            "minItems": 1
+          },
+          "title": null,
+          "description": null,
+          "annotations": null,
+          "outputSchema": null
+        }
+      ],
+      "stats": {
+        "toolCount": 1,
+        "pages": 1
+      }
+    },
+    "after": {
+      "format": "joons-mcp-diff/snapshot",
+      "schemaVersion": 1,
+      "createdAt": "2026-11-12T00:00:00Z",
+      "tool": {
+        "name": "review",
+        "version": "1"
+      },
+      "label": null,
+      "server": {
+        "name": "review",
+        "version": "1",
+        "protocolVersion": "1"
+      },
+      "tools": [
+        {
+          "name": "test",
+          "inputSchema": {
+            "enum": [
+              [
+                1
+              ],
+              [
+                1,
+                2
+              ]
+            ],
+            "minItems": 2
+          },
+          "title": null,
+          "description": null,
+          "annotations": null,
+          "outputSchema": null
+        }
+      ],
+      "stats": {
+        "toolCount": 1,
+        "pages": 1
+      }
+    }
+  },
+  {
+    "id": "RS2N024",
+    "name": "stronger inclusive lower masks exclusive",
+    "expected": "UNCHANGED",
+    "reason": "",
+    "before": {
+      "format": "joons-mcp-diff/snapshot",
+      "schemaVersion": 1,
+      "createdAt": "2026-11-12T00:00:00Z",
+      "tool": {
+        "name": "review",
+        "version": "1"
+      },
+      "label": null,
+      "server": {
+        "name": "review",
+        "version": "1",
+        "protocolVersion": "1"
+      },
+      "tools": [
+        {
+          "name": "test",
+          "inputSchema": {
+            "minimum": 5,
+            "exclusiveMinimum": 1
+          },
+          "title": null,
+          "description": null,
+          "annotations": null,
+          "outputSchema": null
+        }
+      ],
+      "stats": {
+        "toolCount": 1,
+        "pages": 1
+      }
+    },
+    "after": {
+      "format": "joons-mcp-diff/snapshot",
+      "schemaVersion": 1,
+      "createdAt": "2026-11-12T00:00:00Z",
+      "tool": {
+        "name": "review",
+        "version": "1"
+      },
+      "label": null,
+      "server": {
+        "name": "review",
+        "version": "1",
+        "protocolVersion": "1"
+      },
+      "tools": [
+        {
+          "name": "test",
+          "inputSchema": {
+            "minimum": 5,
+            "exclusiveMinimum": 2
+          },
+          "title": null,
+          "description": null,
+          "annotations": null,
+          "outputSchema": null
+        }
+      ],
+      "stats": {
+        "toolCount": 1,
+        "pages": 1
+      }
+    }
+  },
+  {
+    "id": "RS2N025",
+    "name": "stronger exclusive masks inclusive",
+    "expected": "UNCHANGED",
+    "reason": "",
+    "before": {
+      "format": "joons-mcp-diff/snapshot",
+      "schemaVersion": 1,
+      "createdAt": "2026-11-12T00:00:00Z",
+      "tool": {
+        "name": "review",
+        "version": "1"
+      },
+      "label": null,
+      "server": {
+        "name": "review",
+        "version": "1",
+        "protocolVersion": "1"
+      },
+      "tools": [
+        {
+          "name": "test",
+          "inputSchema": {
+            "minimum": 1,
+            "exclusiveMinimum": 5
+          },
+          "title": null,
+          "description": null,
+          "annotations": null,
+          "outputSchema": null
+        }
+      ],
+      "stats": {
+        "toolCount": 1,
+        "pages": 1
+      }
+    },
+    "after": {
+      "format": "joons-mcp-diff/snapshot",
+      "schemaVersion": 1,
+      "createdAt": "2026-11-12T00:00:00Z",
+      "tool": {
+        "name": "review",
+        "version": "1"
+      },
+      "label": null,
+      "server": {
+        "name": "review",
+        "version": "1",
+        "protocolVersion": "1"
+      },
+      "tools": [
+        {
+          "name": "test",
+          "inputSchema": {
+            "minimum": 2,
+            "exclusiveMinimum": 5
+          },
+          "title": null,
+          "description": null,
+          "annotations": null,
+          "outputSchema": null
+        }
+      ],
+      "stats": {
+        "toolCount": 1,
+        "pages": 1
+      }
+    }
+  },
+  {
+    "id": "RS2N026",
+    "name": "combined numeric strict narrowing",
+    "expected": "BREAKING",
+    "reason": "",
+    "before": {
+      "format": "joons-mcp-diff/snapshot",
+      "schemaVersion": 1,
+      "createdAt": "2026-11-12T00:00:00Z",
+      "tool": {
+        "name": "review",
+        "version": "1"
+      },
+      "label": null,
+      "server": {
+        "name": "review",
+        "version": "1",
+        "protocolVersion": "1"
+      },
+      "tools": [
+        {
+          "name": "test",
+          "inputSchema": {
+            "type": "number",
+            "minimum": 1,
+            "exclusiveMinimum": 2
+          },
+          "title": null,
+          "description": null,
+          "annotations": null,
+          "outputSchema": null
+        }
+      ],
+      "stats": {
+        "toolCount": 1,
+        "pages": 1
+      }
+    },
+    "after": {
+      "format": "joons-mcp-diff/snapshot",
+      "schemaVersion": 1,
+      "createdAt": "2026-11-12T00:00:00Z",
+      "tool": {
+        "name": "review",
+        "version": "1"
+      },
+      "label": null,
+      "server": {
+        "name": "review",
+        "version": "1",
+        "protocolVersion": "1"
+      },
+      "tools": [
+        {
+          "name": "test",
+          "inputSchema": {
+            "type": "number",
+            "minimum": 1,
+            "exclusiveMinimum": 3
+          },
+          "title": null,
+          "description": null,
+          "annotations": null,
+          "outputSchema": null
+        }
+      ],
+      "stats": {
+        "toolCount": 1,
+        "pages": 1
+      }
+    }
+  },
+  {
+    "id": "RS2N027",
+    "name": "draft4 boolean narrowing",
+    "expected": "UNKNOWN",
+    "reason": "",
+    "before": {
+      "format": "joons-mcp-diff/snapshot",
+      "schemaVersion": 1,
+      "createdAt": "2026-11-12T00:00:00Z",
+      "tool": {
+        "name": "review",
+        "version": "1"
+      },
+      "label": null,
+      "server": {
+        "name": "review",
+        "version": "1",
+        "protocolVersion": "1"
+      },
+      "tools": [
+        {
+          "name": "test",
+          "inputSchema": {
+            "$schema": "http://json-schema.org/draft-04/schema#",
+            "type": "number",
+            "minimum": 1,
+            "exclusiveMinimum": false
+          },
+          "title": null,
+          "description": null,
+          "annotations": null,
+          "outputSchema": null
+        }
+      ],
+      "stats": {
+        "toolCount": 1,
+        "pages": 1
+      }
+    },
+    "after": {
+      "format": "joons-mcp-diff/snapshot",
+      "schemaVersion": 1,
+      "createdAt": "2026-11-12T00:00:00Z",
+      "tool": {
+        "name": "review",
+        "version": "1"
+      },
+      "label": null,
+      "server": {
+        "name": "review",
+        "version": "1",
+        "protocolVersion": "1"
+      },
+      "tools": [
+        {
+          "name": "test",
+          "inputSchema": {
+            "$schema": "http://json-schema.org/draft-04/schema#",
+            "type": "number",
+            "minimum": 1,
+            "exclusiveMinimum": true
+          },
+          "title": null,
+          "description": null,
+          "annotations": null,
+          "outputSchema": null
+        }
+      ],
+      "stats": {
+        "toolCount": 1,
+        "pages": 1
+      }
+    }
+  },
+  {
+    "id": "RS2N028",
+    "name": "draft4 boolean widening",
+    "expected": "UNKNOWN",
+    "reason": "",
+    "before": {
+      "format": "joons-mcp-diff/snapshot",
+      "schemaVersion": 1,
+      "createdAt": "2026-11-12T00:00:00Z",
+      "tool": {
+        "name": "review",
+        "version": "1"
+      },
+      "label": null,
+      "server": {
+        "name": "review",
+        "version": "1",
+        "protocolVersion": "1"
+      },
+      "tools": [
+        {
+          "name": "test",
+          "inputSchema": {
+            "$schema": "http://json-schema.org/draft-04/schema#",
+            "minimum": 1,
+            "exclusiveMinimum": true
+          },
+          "title": null,
+          "description": null,
+          "annotations": null,
+          "outputSchema": null
+        }
+      ],
+      "stats": {
+        "toolCount": 1,
+        "pages": 1
+      }
+    },
+    "after": {
+      "format": "joons-mcp-diff/snapshot",
+      "schemaVersion": 1,
+      "createdAt": "2026-11-12T00:00:00Z",
+      "tool": {
+        "name": "review",
+        "version": "1"
+      },
+      "label": null,
+      "server": {
+        "name": "review",
+        "version": "1",
+        "protocolVersion": "1"
+      },
+      "tools": [
+        {
+          "name": "test",
+          "inputSchema": {
+            "$schema": "http://json-schema.org/draft-04/schema#",
+            "minimum": 1,
+            "exclusiveMinimum": false
+          },
+          "title": null,
+          "description": null,
+          "annotations": null,
+          "outputSchema": null
+        }
+      ],
+      "stats": {
+        "toolCount": 1,
+        "pages": 1
+      }
+    }
+  },
+  {
+    "id": "RS2N029",
+    "name": "integer fractional equivalent",
+    "expected": "UNCHANGED",
+    "reason": "",
+    "before": {
+      "format": "joons-mcp-diff/snapshot",
+      "schemaVersion": 1,
+      "createdAt": "2026-11-12T00:00:00Z",
+      "tool": {
+        "name": "review",
+        "version": "1"
+      },
+      "label": null,
+      "server": {
+        "name": "review",
+        "version": "1",
+        "protocolVersion": "1"
+      },
+      "tools": [
+        {
+          "name": "test",
+          "inputSchema": {
+            "type": "integer",
+            "minimum": 1.1
+          },
+          "title": null,
+          "description": null,
+          "annotations": null,
+          "outputSchema": null
+        }
+      ],
+      "stats": {
+        "toolCount": 1,
+        "pages": 1
+      }
+    },
+    "after": {
+      "format": "joons-mcp-diff/snapshot",
+      "schemaVersion": 1,
+      "createdAt": "2026-11-12T00:00:00Z",
+      "tool": {
+        "name": "review",
+        "version": "1"
+      },
+      "label": null,
+      "server": {
+        "name": "review",
+        "version": "1",
+        "protocolVersion": "1"
+      },
+      "tools": [
+        {
+          "name": "test",
+          "inputSchema": {
+            "type": "integer",
+            "exclusiveMinimum": 1
+          },
+          "title": null,
+          "description": null,
+          "annotations": null,
+          "outputSchema": null
+        }
+      ],
+      "stats": {
+        "toolCount": 1,
+        "pages": 1
+      }
+    }
+  },
+  {
+    "id": "RS2N030",
+    "name": "huge integer exclusive lower",
+    "expected": "UNKNOWN",
+    "reason": "Large integer endpoint cannot be normalized with safe Number successor/predecessor arithmetic.",
+    "before": {
+      "format": "joons-mcp-diff/snapshot",
+      "schemaVersion": 1,
+      "createdAt": "2026-11-12T00:00:00Z",
+      "tool": {
+        "name": "review",
+        "version": "1"
+      },
+      "label": null,
+      "server": {
+        "name": "review",
+        "version": "1",
+        "protocolVersion": "1"
+      },
+      "tools": [
+        {
+          "name": "test",
+          "inputSchema": {
+            "type": "integer",
+            "minimum": 9007199254740992
+          },
+          "title": null,
+          "description": null,
+          "annotations": null,
+          "outputSchema": null
+        }
+      ],
+      "stats": {
+        "toolCount": 1,
+        "pages": 1
+      }
+    },
+    "after": {
+      "format": "joons-mcp-diff/snapshot",
+      "schemaVersion": 1,
+      "createdAt": "2026-11-12T00:00:00Z",
+      "tool": {
+        "name": "review",
+        "version": "1"
+      },
+      "label": null,
+      "server": {
+        "name": "review",
+        "version": "1",
+        "protocolVersion": "1"
+      },
+      "tools": [
+        {
+          "name": "test",
+          "inputSchema": {
+            "type": "integer",
+            "exclusiveMinimum": 9007199254740992
+          },
+          "title": null,
+          "description": null,
+          "annotations": null,
+          "outputSchema": null
+        }
+      ],
+      "stats": {
+        "toolCount": 1,
+        "pages": 1
+      }
+    }
+  },
+  {
+    "id": "RS2N031",
+    "name": "huge integer exclusive upper",
+    "expected": "UNKNOWN",
+    "reason": "Large integer endpoint cannot be normalized with safe Number successor/predecessor arithmetic.",
+    "before": {
+      "format": "joons-mcp-diff/snapshot",
+      "schemaVersion": 1,
+      "createdAt": "2026-11-12T00:00:00Z",
+      "tool": {
+        "name": "review",
+        "version": "1"
+      },
+      "label": null,
+      "server": {
+        "name": "review",
+        "version": "1",
+        "protocolVersion": "1"
+      },
+      "tools": [
+        {
+          "name": "test",
+          "inputSchema": {
+            "type": "integer",
+            "maximum": -9007199254740992
+          },
+          "title": null,
+          "description": null,
+          "annotations": null,
+          "outputSchema": null
+        }
+      ],
+      "stats": {
+        "toolCount": 1,
+        "pages": 1
+      }
+    },
+    "after": {
+      "format": "joons-mcp-diff/snapshot",
+      "schemaVersion": 1,
+      "createdAt": "2026-11-12T00:00:00Z",
+      "tool": {
+        "name": "review",
+        "version": "1"
+      },
+      "label": null,
+      "server": {
+        "name": "review",
+        "version": "1",
+        "protocolVersion": "1"
+      },
+      "tools": [
+        {
+          "name": "test",
+          "inputSchema": {
+            "type": "integer",
+            "exclusiveMaximum": -9007199254740992
+          },
+          "title": null,
+          "description": null,
+          "annotations": null,
+          "outputSchema": null
+        }
+      ],
+      "stats": {
+        "toolCount": 1,
+        "pages": 1
+      }
+    }
+  },
+  {
+    "id": "RS2N032",
+    "name": "huge integer lower plus title",
+    "expected": "UNKNOWN",
+    "reason": "Large integer endpoint cannot be normalized with safe Number successor/predecessor arithmetic.",
+    "before": {
+      "format": "joons-mcp-diff/snapshot",
+      "schemaVersion": 1,
+      "createdAt": "2026-11-12T00:00:00Z",
+      "tool": {
+        "name": "review",
+        "version": "1"
+      },
+      "label": null,
+      "server": {
+        "name": "review",
+        "version": "1",
+        "protocolVersion": "1"
+      },
+      "tools": [
+        {
+          "name": "test",
+          "inputSchema": {
+            "type": "integer",
+            "minimum": 9007199254740992,
+            "title": "a"
+          },
+          "title": null,
+          "description": null,
+          "annotations": null,
+          "outputSchema": null
+        }
+      ],
+      "stats": {
+        "toolCount": 1,
+        "pages": 1
+      }
+    },
+    "after": {
+      "format": "joons-mcp-diff/snapshot",
+      "schemaVersion": 1,
+      "createdAt": "2026-11-12T00:00:00Z",
+      "tool": {
+        "name": "review",
+        "version": "1"
+      },
+      "label": null,
+      "server": {
+        "name": "review",
+        "version": "1",
+        "protocolVersion": "1"
+      },
+      "tools": [
+        {
+          "name": "test",
+          "inputSchema": {
+            "type": "integer",
+            "exclusiveMinimum": 9007199254740992,
+            "title": "b"
+          },
+          "title": null,
+          "description": null,
+          "annotations": null,
+          "outputSchema": null
+        }
+      ],
+      "stats": {
+        "toolCount": 1,
+        "pages": 1
+      }
+    }
+  },
+  {
+    "id": "RS2N033",
+    "name": "nested doc oneOf",
+    "expected": "NON_BREAKING",
+    "reason": "",
+    "before": {
+      "format": "joons-mcp-diff/snapshot",
+      "schemaVersion": 1,
+      "createdAt": "2026-11-12T00:00:00Z",
+      "tool": {
+        "name": "review",
+        "version": "1"
+      },
+      "label": null,
+      "server": {
+        "name": "review",
+        "version": "1",
+        "protocolVersion": "1"
+      },
+      "tools": [
+        {
+          "name": "test",
+          "inputSchema": {
+            "oneOf": [
+              {
+                "type": "string",
+                "title": "a"
+              }
+            ]
+          },
+          "title": null,
+          "description": null,
+          "annotations": null,
+          "outputSchema": null
+        }
+      ],
+      "stats": {
+        "toolCount": 1,
+        "pages": 1
+      }
+    },
+    "after": {
+      "format": "joons-mcp-diff/snapshot",
+      "schemaVersion": 1,
+      "createdAt": "2026-11-12T00:00:00Z",
+      "tool": {
+        "name": "review",
+        "version": "1"
+      },
+      "label": null,
+      "server": {
+        "name": "review",
+        "version": "1",
+        "protocolVersion": "1"
+      },
+      "tools": [
+        {
+          "name": "test",
+          "inputSchema": {
+            "oneOf": [
+              {
+                "type": "string",
+                "title": "b"
+              }
+            ]
+          },
+          "title": null,
+          "description": null,
+          "annotations": null,
+          "outputSchema": null
+        }
+      ],
+      "stats": {
+        "toolCount": 1,
+        "pages": 1
+      }
+    }
+  },
+  {
+    "id": "RS2N034",
+    "name": "nested constraint oneOf",
+    "expected": "UNKNOWN",
+    "reason": "",
+    "before": {
+      "format": "joons-mcp-diff/snapshot",
+      "schemaVersion": 1,
+      "createdAt": "2026-11-12T00:00:00Z",
+      "tool": {
+        "name": "review",
+        "version": "1"
+      },
+      "label": null,
+      "server": {
+        "name": "review",
+        "version": "1",
+        "protocolVersion": "1"
+      },
+      "tools": [
+        {
+          "name": "test",
+          "inputSchema": {
+            "oneOf": [
+              {
+                "type": "number"
+              }
+            ]
+          },
+          "title": null,
+          "description": null,
+          "annotations": null,
+          "outputSchema": null
+        }
+      ],
+      "stats": {
+        "toolCount": 1,
+        "pages": 1
+      }
+    },
+    "after": {
+      "format": "joons-mcp-diff/snapshot",
+      "schemaVersion": 1,
+      "createdAt": "2026-11-12T00:00:00Z",
+      "tool": {
+        "name": "review",
+        "version": "1"
+      },
+      "label": null,
+      "server": {
+        "name": "review",
+        "version": "1",
+        "protocolVersion": "1"
+      },
+      "tools": [
+        {
+          "name": "test",
+          "inputSchema": {
+            "oneOf": [
+              {
+                "type": "integer"
+              }
+            ]
+          },
+          "title": null,
+          "description": null,
+          "annotations": null,
+          "outputSchema": null
+        }
+      ],
+      "stats": {
+        "toolCount": 1,
+        "pages": 1
+      }
+    }
+  },
+  {
+    "id": "RS2N035",
+    "name": "nested doc allOf",
+    "expected": "NON_BREAKING",
+    "reason": "",
+    "before": {
+      "format": "joons-mcp-diff/snapshot",
+      "schemaVersion": 1,
+      "createdAt": "2026-11-12T00:00:00Z",
+      "tool": {
+        "name": "review",
+        "version": "1"
+      },
+      "label": null,
+      "server": {
+        "name": "review",
+        "version": "1",
+        "protocolVersion": "1"
+      },
+      "tools": [
+        {
+          "name": "test",
+          "inputSchema": {
+            "allOf": [
+              {
+                "type": "string",
+                "title": "a"
+              }
+            ]
+          },
+          "title": null,
+          "description": null,
+          "annotations": null,
+          "outputSchema": null
+        }
+      ],
+      "stats": {
+        "toolCount": 1,
+        "pages": 1
+      }
+    },
+    "after": {
+      "format": "joons-mcp-diff/snapshot",
+      "schemaVersion": 1,
+      "createdAt": "2026-11-12T00:00:00Z",
+      "tool": {
+        "name": "review",
+        "version": "1"
+      },
+      "label": null,
+      "server": {
+        "name": "review",
+        "version": "1",
+        "protocolVersion": "1"
+      },
+      "tools": [
+        {
+          "name": "test",
+          "inputSchema": {
+            "allOf": [
+              {
+                "type": "string",
+                "title": "b"
+              }
+            ]
+          },
+          "title": null,
+          "description": null,
+          "annotations": null,
+          "outputSchema": null
+        }
+      ],
+      "stats": {
+        "toolCount": 1,
+        "pages": 1
+      }
+    }
+  },
+  {
+    "id": "RS2N036",
+    "name": "nested constraint allOf",
+    "expected": "UNKNOWN",
+    "reason": "",
+    "before": {
+      "format": "joons-mcp-diff/snapshot",
+      "schemaVersion": 1,
+      "createdAt": "2026-11-12T00:00:00Z",
+      "tool": {
+        "name": "review",
+        "version": "1"
+      },
+      "label": null,
+      "server": {
+        "name": "review",
+        "version": "1",
+        "protocolVersion": "1"
+      },
+      "tools": [
+        {
+          "name": "test",
+          "inputSchema": {
+            "allOf": [
+              {
+                "type": "number"
+              }
+            ]
+          },
+          "title": null,
+          "description": null,
+          "annotations": null,
+          "outputSchema": null
+        }
+      ],
+      "stats": {
+        "toolCount": 1,
+        "pages": 1
+      }
+    },
+    "after": {
+      "format": "joons-mcp-diff/snapshot",
+      "schemaVersion": 1,
+      "createdAt": "2026-11-12T00:00:00Z",
+      "tool": {
+        "name": "review",
+        "version": "1"
+      },
+      "label": null,
+      "server": {
+        "name": "review",
+        "version": "1",
+        "protocolVersion": "1"
+      },
+      "tools": [
+        {
+          "name": "test",
+          "inputSchema": {
+            "allOf": [
+              {
+                "type": "integer"
+              }
+            ]
+          },
+          "title": null,
+          "description": null,
+          "annotations": null,
+          "outputSchema": null
+        }
+      ],
+      "stats": {
+        "toolCount": 1,
+        "pages": 1
+      }
+    }
+  },
+  {
+    "id": "RS2N037",
+    "name": "nested doc prefixItems",
+    "expected": "NON_BREAKING",
+    "reason": "",
+    "before": {
+      "format": "joons-mcp-diff/snapshot",
+      "schemaVersion": 1,
+      "createdAt": "2026-11-12T00:00:00Z",
+      "tool": {
+        "name": "review",
+        "version": "1"
+      },
+      "label": null,
+      "server": {
+        "name": "review",
+        "version": "1",
+        "protocolVersion": "1"
+      },
+      "tools": [
+        {
+          "name": "test",
+          "inputSchema": {
+            "prefixItems": [
+              {
+                "type": "string",
+                "title": "a"
+              }
+            ]
+          },
+          "title": null,
+          "description": null,
+          "annotations": null,
+          "outputSchema": null
+        }
+      ],
+      "stats": {
+        "toolCount": 1,
+        "pages": 1
+      }
+    },
+    "after": {
+      "format": "joons-mcp-diff/snapshot",
+      "schemaVersion": 1,
+      "createdAt": "2026-11-12T00:00:00Z",
+      "tool": {
+        "name": "review",
+        "version": "1"
+      },
+      "label": null,
+      "server": {
+        "name": "review",
+        "version": "1",
+        "protocolVersion": "1"
+      },
+      "tools": [
+        {
+          "name": "test",
+          "inputSchema": {
+            "prefixItems": [
+              {
+                "type": "string",
+                "title": "b"
+              }
+            ]
+          },
+          "title": null,
+          "description": null,
+          "annotations": null,
+          "outputSchema": null
+        }
+      ],
+      "stats": {
+        "toolCount": 1,
+        "pages": 1
+      }
+    }
+  },
+  {
+    "id": "RS2N038",
+    "name": "nested constraint prefixItems",
+    "expected": "UNKNOWN",
+    "reason": "",
+    "before": {
+      "format": "joons-mcp-diff/snapshot",
+      "schemaVersion": 1,
+      "createdAt": "2026-11-12T00:00:00Z",
+      "tool": {
+        "name": "review",
+        "version": "1"
+      },
+      "label": null,
+      "server": {
+        "name": "review",
+        "version": "1",
+        "protocolVersion": "1"
+      },
+      "tools": [
+        {
+          "name": "test",
+          "inputSchema": {
+            "prefixItems": [
+              {
+                "type": "number"
+              }
+            ]
+          },
+          "title": null,
+          "description": null,
+          "annotations": null,
+          "outputSchema": null
+        }
+      ],
+      "stats": {
+        "toolCount": 1,
+        "pages": 1
+      }
+    },
+    "after": {
+      "format": "joons-mcp-diff/snapshot",
+      "schemaVersion": 1,
+      "createdAt": "2026-11-12T00:00:00Z",
+      "tool": {
+        "name": "review",
+        "version": "1"
+      },
+      "label": null,
+      "server": {
+        "name": "review",
+        "version": "1",
+        "protocolVersion": "1"
+      },
+      "tools": [
+        {
+          "name": "test",
+          "inputSchema": {
+            "prefixItems": [
+              {
+                "type": "integer"
+              }
+            ]
+          },
+          "title": null,
+          "description": null,
+          "annotations": null,
+          "outputSchema": null
+        }
+      ],
+      "stats": {
+        "toolCount": 1,
+        "pages": 1
+      }
+    }
+  },
+  {
+    "id": "RS2N039",
+    "name": "docs inside additionalProperties",
+    "expected": "NON_BREAKING",
+    "reason": "",
+    "before": {
+      "format": "joons-mcp-diff/snapshot",
+      "schemaVersion": 1,
+      "createdAt": "2026-11-12T00:00:00Z",
+      "tool": {
+        "name": "review",
+        "version": "1"
+      },
+      "label": null,
+      "server": {
+        "name": "review",
+        "version": "1",
+        "protocolVersion": "1"
+      },
+      "tools": [
+        {
+          "name": "test",
+          "inputSchema": {
+            "additionalProperties": {
+              "description": "a"
+            }
+          },
+          "title": null,
+          "description": null,
+          "annotations": null,
+          "outputSchema": null
+        }
+      ],
+      "stats": {
+        "toolCount": 1,
+        "pages": 1
+      }
+    },
+    "after": {
+      "format": "joons-mcp-diff/snapshot",
+      "schemaVersion": 1,
+      "createdAt": "2026-11-12T00:00:00Z",
+      "tool": {
+        "name": "review",
+        "version": "1"
+      },
+      "label": null,
+      "server": {
+        "name": "review",
+        "version": "1",
+        "protocolVersion": "1"
+      },
+      "tools": [
+        {
+          "name": "test",
+          "inputSchema": {
+            "additionalProperties": {
+              "description": "b"
+            }
+          },
+          "title": null,
+          "description": null,
+          "annotations": null,
+          "outputSchema": null
+        }
+      ],
+      "stats": {
+        "toolCount": 1,
+        "pages": 1
+      }
+    }
+  },
+  {
+    "id": "RS2N040",
+    "name": "docs inside propertyNames",
+    "expected": "NON_BREAKING",
+    "reason": "",
+    "before": {
+      "format": "joons-mcp-diff/snapshot",
+      "schemaVersion": 1,
+      "createdAt": "2026-11-12T00:00:00Z",
+      "tool": {
+        "name": "review",
+        "version": "1"
+      },
+      "label": null,
+      "server": {
+        "name": "review",
+        "version": "1",
+        "protocolVersion": "1"
+      },
+      "tools": [
+        {
+          "name": "test",
+          "inputSchema": {
+            "propertyNames": {
+              "description": "a"
+            }
+          },
+          "title": null,
+          "description": null,
+          "annotations": null,
+          "outputSchema": null
+        }
+      ],
+      "stats": {
+        "toolCount": 1,
+        "pages": 1
+      }
+    },
+    "after": {
+      "format": "joons-mcp-diff/snapshot",
+      "schemaVersion": 1,
+      "createdAt": "2026-11-12T00:00:00Z",
+      "tool": {
+        "name": "review",
+        "version": "1"
+      },
+      "label": null,
+      "server": {
+        "name": "review",
+        "version": "1",
+        "protocolVersion": "1"
+      },
+      "tools": [
+        {
+          "name": "test",
+          "inputSchema": {
+            "propertyNames": {
+              "description": "b"
+            }
+          },
+          "title": null,
+          "description": null,
+          "annotations": null,
+          "outputSchema": null
+        }
+      ],
+      "stats": {
+        "toolCount": 1,
+        "pages": 1
+      }
+    }
+  },
+  {
+    "id": "RS2N041",
+    "name": "literal description in complex enum",
+    "expected": "UNKNOWN",
+    "reason": "",
+    "before": {
+      "format": "joons-mcp-diff/snapshot",
+      "schemaVersion": 1,
+      "createdAt": "2026-11-12T00:00:00Z",
+      "tool": {
+        "name": "review",
+        "version": "1"
+      },
+      "label": null,
+      "server": {
+        "name": "review",
+        "version": "1",
+        "protocolVersion": "1"
+      },
+      "tools": [
+        {
+          "name": "test",
+          "inputSchema": {
+            "oneOf": [
+              {
+                "enum": [
+                  {
+                    "description": "a"
+                  }
+                ]
+              }
+            ]
+          },
+          "title": null,
+          "description": null,
+          "annotations": null,
+          "outputSchema": null
+        }
+      ],
+      "stats": {
+        "toolCount": 1,
+        "pages": 1
+      }
+    },
+    "after": {
+      "format": "joons-mcp-diff/snapshot",
+      "schemaVersion": 1,
+      "createdAt": "2026-11-12T00:00:00Z",
+      "tool": {
+        "name": "review",
+        "version": "1"
+      },
+      "label": null,
+      "server": {
+        "name": "review",
+        "version": "1",
+        "protocolVersion": "1"
+      },
+      "tools": [
+        {
+          "name": "test",
+          "inputSchema": {
+            "oneOf": [
+              {
+                "enum": [
+                  {
+                    "description": "b"
+                  }
+                ]
+              }
+            ]
+          },
+          "title": null,
+          "description": null,
+          "annotations": null,
+          "outputSchema": null
+        }
+      ],
+      "stats": {
+        "toolCount": 1,
+        "pages": 1
+      }
+    }
+  },
+  {
+    "id": "RS2N042",
+    "name": "required stable escaped name",
+    "expected": "BREAKING",
+    "reason": "",
+    "before": {
+      "format": "joons-mcp-diff/snapshot",
+      "schemaVersion": 1,
+      "createdAt": "2026-11-12T00:00:00Z",
+      "tool": {
+        "name": "review",
+        "version": "1"
+      },
+      "label": null,
+      "server": {
+        "name": "review",
+        "version": "1",
+        "protocolVersion": "1"
+      },
+      "tools": [
+        {
+          "name": "test",
+          "inputSchema": {
+            "properties": {
+              "a~/b": {}
+            }
+          },
+          "title": null,
+          "description": null,
+          "annotations": null,
+          "outputSchema": null
+        }
+      ],
+      "stats": {
+        "toolCount": 1,
+        "pages": 1
+      }
+    },
+    "after": {
+      "format": "joons-mcp-diff/snapshot",
+      "schemaVersion": 1,
+      "createdAt": "2026-11-12T00:00:00Z",
+      "tool": {
+        "name": "review",
+        "version": "1"
+      },
+      "label": null,
+      "server": {
+        "name": "review",
+        "version": "1",
+        "protocolVersion": "1"
+      },
+      "tools": [
+        {
+          "name": "test",
+          "inputSchema": {
+            "properties": {
+              "a~/b": {}
+            },
+            "required": [
+              "a~/b"
+            ]
+          },
+          "title": null,
+          "description": null,
+          "annotations": null,
+          "outputSchema": null
+        }
+      ],
+      "stats": {
+        "toolCount": 1,
+        "pages": 1
+      }
+    }
+  },
+  {
+    "id": "RS2N043",
+    "name": "required permutation addition",
+    "expected": "BREAKING",
+    "reason": "",
+    "before": {
+      "format": "joons-mcp-diff/snapshot",
+      "schemaVersion": 1,
+      "createdAt": "2026-11-12T00:00:00Z",
+      "tool": {
+        "name": "review",
+        "version": "1"
+      },
+      "label": null,
+      "server": {
+        "name": "review",
+        "version": "1",
+        "protocolVersion": "1"
+      },
+      "tools": [
+        {
+          "name": "test",
+          "inputSchema": {
+            "required": [
+              "z"
+            ]
+          },
+          "title": null,
+          "description": null,
+          "annotations": null,
+          "outputSchema": null
+        }
+      ],
+      "stats": {
+        "toolCount": 1,
+        "pages": 1
+      }
+    },
+    "after": {
+      "format": "joons-mcp-diff/snapshot",
+      "schemaVersion": 1,
+      "createdAt": "2026-11-12T00:00:00Z",
+      "tool": {
+        "name": "review",
+        "version": "1"
+      },
+      "label": null,
+      "server": {
+        "name": "review",
+        "version": "1",
+        "protocolVersion": "1"
+      },
+      "tools": [
+        {
+          "name": "test",
+          "inputSchema": {
+            "required": [
+              "b",
+              "z",
+              "a"
+            ]
+          },
+          "title": null,
+          "description": null,
+          "annotations": null,
+          "outputSchema": null
+        }
+      ],
+      "stats": {
+        "toolCount": 1,
+        "pages": 1
+      }
+    }
+  },
+  {
+    "id": "RS2N044",
+    "name": "finite uniqueItems redundant",
+    "expected": "UNCHANGED",
+    "reason": "Every allowed array already has unique elements.",
+    "before": {
+      "format": "joons-mcp-diff/snapshot",
+      "schemaVersion": 1,
+      "createdAt": "2026-11-12T00:00:00Z",
+      "tool": {
+        "name": "review",
+        "version": "1"
+      },
+      "label": null,
+      "server": {
+        "name": "review",
+        "version": "1",
+        "protocolVersion": "1"
+      },
+      "tools": [
+        {
+          "name": "test",
+          "inputSchema": {
+            "enum": [
+              [
+                1,
+                2
+              ]
+            ]
+          },
+          "title": null,
+          "description": null,
+          "annotations": null,
+          "outputSchema": null
+        }
+      ],
+      "stats": {
+        "toolCount": 1,
+        "pages": 1
+      }
+    },
+    "after": {
+      "format": "joons-mcp-diff/snapshot",
+      "schemaVersion": 1,
+      "createdAt": "2026-11-12T00:00:00Z",
+      "tool": {
+        "name": "review",
+        "version": "1"
+      },
+      "label": null,
+      "server": {
+        "name": "review",
+        "version": "1",
+        "protocolVersion": "1"
+      },
+      "tools": [
+        {
+          "name": "test",
+          "inputSchema": {
+            "enum": [
+              [
+                1,
+                2
+              ]
+            ],
+            "uniqueItems": true
+          },
+          "title": null,
+          "description": null,
+          "annotations": null,
+          "outputSchema": null
+        }
+      ],
+      "stats": {
+        "toolCount": 1,
+        "pages": 1
+      }
+    }
+  },
+  {
+    "id": "RS2N045",
+    "name": "irrelevant uniqueItems on string",
+    "expected": "UNCHANGED",
+    "reason": "",
+    "before": {
+      "format": "joons-mcp-diff/snapshot",
+      "schemaVersion": 1,
+      "createdAt": "2026-11-12T00:00:00Z",
+      "tool": {
+        "name": "review",
+        "version": "1"
+      },
+      "label": null,
+      "server": {
+        "name": "review",
+        "version": "1",
+        "protocolVersion": "1"
+      },
+      "tools": [
+        {
+          "name": "test",
+          "inputSchema": {
+            "type": "string"
+          },
+          "title": null,
+          "description": null,
+          "annotations": null,
+          "outputSchema": null
+        }
+      ],
+      "stats": {
+        "toolCount": 1,
+        "pages": 1
+      }
+    },
+    "after": {
+      "format": "joons-mcp-diff/snapshot",
+      "schemaVersion": 1,
+      "createdAt": "2026-11-12T00:00:00Z",
+      "tool": {
+        "name": "review",
+        "version": "1"
+      },
+      "label": null,
+      "server": {
+        "name": "review",
+        "version": "1",
+        "protocolVersion": "1"
+      },
+      "tools": [
+        {
+          "name": "test",
+          "inputSchema": {
+            "type": "string",
+            "uniqueItems": true
+          },
+          "title": null,
+          "description": null,
+          "annotations": null,
+          "outputSchema": null
+        }
+      ],
+      "stats": {
+        "toolCount": 1,
+        "pages": 1
+      }
+    }
+  },
+  {
+    "id": "RS2N046",
+    "name": "finite numeric unsat with extra keyword",
+    "expected": "NON_BREAKING",
+    "reason": "",
+    "before": {
+      "format": "joons-mcp-diff/snapshot",
+      "schemaVersion": 1,
+      "createdAt": "2026-11-12T00:00:00Z",
+      "tool": {
+        "name": "review",
+        "version": "1"
+      },
+      "label": null,
+      "server": {
+        "name": "review",
+        "version": "1",
+        "protocolVersion": "1"
+      },
+      "tools": [
+        {
+          "name": "test",
+          "inputSchema": {
+            "type": "number",
+            "minimum": 10,
+            "enum": [
+              1
+            ]
+          },
+          "title": null,
+          "description": null,
+          "annotations": null,
+          "outputSchema": null
+        }
+      ],
+      "stats": {
+        "toolCount": 1,
+        "pages": 1
+      }
+    },
+    "after": {
+      "format": "joons-mcp-diff/snapshot",
+      "schemaVersion": 1,
+      "createdAt": "2026-11-12T00:00:00Z",
+      "tool": {
+        "name": "review",
+        "version": "1"
+      },
+      "label": null,
+      "server": {
+        "name": "review",
+        "version": "1",
+        "protocolVersion": "1"
+      },
+      "tools": [
+        {
+          "name": "test",
+          "inputSchema": {
+            "type": "number",
+            "minimum": 10,
+            "enum": [
+              1
+            ],
+            "description": "a"
+          },
+          "title": null,
+          "description": null,
+          "annotations": null,
+          "outputSchema": null
+        }
+      ],
+      "stats": {
+        "toolCount": 1,
+        "pages": 1
+      }
+    }
+  },
+  {
+    "id": "RS2N047",
+    "name": "invalid schemaVersion 2",
+    "expected": "REJECT",
+    "reason": "",
+    "before": {
+      "format": "joons-mcp-diff/snapshot",
+      "schemaVersion": 1,
+      "createdAt": "2026-11-12T00:00:00Z",
+      "tool": {
+        "name": "review",
+        "version": "1"
+      },
+      "label": null,
+      "server": {
+        "name": "review",
+        "version": "1",
+        "protocolVersion": "1"
+      },
+      "tools": [
+        {
+          "name": "test",
+          "inputSchema": {},
+          "title": null,
+          "description": null,
+          "annotations": null,
+          "outputSchema": null
+        }
+      ],
+      "stats": {
+        "toolCount": 1,
+        "pages": 1
+      }
+    },
+    "after": {
+      "format": "joons-mcp-diff/snapshot",
+      "schemaVersion": 2,
+      "createdAt": "2026-11-12T00:00:00Z",
+      "tool": {
+        "name": "review",
+        "version": "1"
+      },
+      "label": null,
+      "server": {
+        "name": "review",
+        "version": "1",
+        "protocolVersion": "1"
+      },
+      "tools": [
+        {
+          "name": "test",
+          "inputSchema": {},
+          "title": null,
+          "description": null,
+          "annotations": null,
+          "outputSchema": null
+        }
+      ],
+      "stats": {
+        "toolCount": 1,
+        "pages": 1
+      }
+    }
+  },
+  {
+    "id": "RS2N048",
+    "name": "invalid schemaVersion 0",
+    "expected": "REJECT",
+    "reason": "",
+    "before": {
+      "format": "joons-mcp-diff/snapshot",
+      "schemaVersion": 1,
+      "createdAt": "2026-11-12T00:00:00Z",
+      "tool": {
+        "name": "review",
+        "version": "1"
+      },
+      "label": null,
+      "server": {
+        "name": "review",
+        "version": "1",
+        "protocolVersion": "1"
+      },
+      "tools": [
+        {
+          "name": "test",
+          "inputSchema": {},
+          "title": null,
+          "description": null,
+          "annotations": null,
+          "outputSchema": null
+        }
+      ],
+      "stats": {
+        "toolCount": 1,
+        "pages": 1
+      }
+    },
+    "after": {
+      "format": "joons-mcp-diff/snapshot",
+      "schemaVersion": 0,
+      "createdAt": "2026-11-12T00:00:00Z",
+      "tool": {
+        "name": "review",
+        "version": "1"
+      },
+      "label": null,
+      "server": {
+        "name": "review",
+        "version": "1",
+        "protocolVersion": "1"
+      },
+      "tools": [
+        {
+          "name": "test",
+          "inputSchema": {},
+          "title": null,
+          "description": null,
+          "annotations": null,
+          "outputSchema": null
+        }
+      ],
+      "stats": {
+        "toolCount": 1,
+        "pages": 1
+      }
+    }
+  },
+  {
+    "id": "RS2N049",
+    "name": "invalid schemaVersion \"1\"",
+    "expected": "REJECT",
+    "reason": "",
+    "before": {
+      "format": "joons-mcp-diff/snapshot",
+      "schemaVersion": 1,
+      "createdAt": "2026-11-12T00:00:00Z",
+      "tool": {
+        "name": "review",
+        "version": "1"
+      },
+      "label": null,
+      "server": {
+        "name": "review",
+        "version": "1",
+        "protocolVersion": "1"
+      },
+      "tools": [
+        {
+          "name": "test",
+          "inputSchema": {},
+          "title": null,
+          "description": null,
+          "annotations": null,
+          "outputSchema": null
+        }
+      ],
+      "stats": {
+        "toolCount": 1,
+        "pages": 1
+      }
+    },
+    "after": {
+      "format": "joons-mcp-diff/snapshot",
+      "schemaVersion": "1",
+      "createdAt": "2026-11-12T00:00:00Z",
+      "tool": {
+        "name": "review",
+        "version": "1"
+      },
+      "label": null,
+      "server": {
+        "name": "review",
+        "version": "1",
+        "protocolVersion": "1"
+      },
+      "tools": [
+        {
+          "name": "test",
+          "inputSchema": {},
+          "title": null,
+          "description": null,
+          "annotations": null,
+          "outputSchema": null
+        }
+      ],
+      "stats": {
+        "toolCount": 1,
+        "pages": 1
+      }
+    }
+  },
+  {
+    "id": "RS2N050",
+    "name": "invalid schemaVersion null",
+    "expected": "REJECT",
+    "reason": "",
+    "before": {
+      "format": "joons-mcp-diff/snapshot",
+      "schemaVersion": 1,
+      "createdAt": "2026-11-12T00:00:00Z",
+      "tool": {
+        "name": "review",
+        "version": "1"
+      },
+      "label": null,
+      "server": {
+        "name": "review",
+        "version": "1",
+        "protocolVersion": "1"
+      },
+      "tools": [
+        {
+          "name": "test",
+          "inputSchema": {},
+          "title": null,
+          "description": null,
+          "annotations": null,
+          "outputSchema": null
+        }
+      ],
+      "stats": {
+        "toolCount": 1,
+        "pages": 1
+      }
+    },
+    "after": {
+      "format": "joons-mcp-diff/snapshot",
+      "schemaVersion": null,
+      "createdAt": "2026-11-12T00:00:00Z",
+      "tool": {
+        "name": "review",
+        "version": "1"
+      },
+      "label": null,
+      "server": {
+        "name": "review",
+        "version": "1",
+        "protocolVersion": "1"
+      },
+      "tools": [
+        {
+          "name": "test",
+          "inputSchema": {},
+          "title": null,
+          "description": null,
+          "annotations": null,
+          "outputSchema": null
+        }
+      ],
+      "stats": {
+        "toolCount": 1,
+        "pages": 1
+      }
+    }
+  },
+  {
+    "id": "RS2N051",
+    "name": "missing schemaVersion",
+    "expected": "REJECT",
+    "reason": "",
+    "before": {
+      "format": "joons-mcp-diff/snapshot",
+      "createdAt": "2026-11-12T00:00:00Z",
+      "tool": {
+        "name": "review",
+        "version": "1"
+      },
+      "label": null,
+      "server": {
+        "name": "review",
+        "version": "1",
+        "protocolVersion": "1"
+      },
+      "tools": [
+        {
+          "name": "test",
+          "inputSchema": {},
+          "title": null,
+          "description": null,
+          "annotations": null,
+          "outputSchema": null
+        }
+      ],
+      "stats": {
+        "toolCount": 1,
+        "pages": 1
+      }
+    },
+    "after": {
+      "format": "joons-mcp-diff/snapshot",
+      "schemaVersion": 1,
+      "createdAt": "2026-11-12T00:00:00Z",
+      "tool": {
+        "name": "review",
+        "version": "1"
+      },
+      "label": null,
+      "server": {
+        "name": "review",
+        "version": "1",
+        "protocolVersion": "1"
+      },
+      "tools": [
+        {
+          "name": "test",
+          "inputSchema": {},
+          "title": null,
+          "description": null,
+          "annotations": null,
+          "outputSchema": null
+        }
+      ],
+      "stats": {
+        "toolCount": 1,
+        "pages": 1
+      }
+    }
+  },
+  {
+    "id": "RS2N052",
+    "name": "invalid null snapshot",
+    "expected": "REJECT",
+    "reason": "",
+    "before": null,
+    "after": {
+      "format": "joons-mcp-diff/snapshot",
+      "schemaVersion": 1,
+      "createdAt": "2026-11-12T00:00:00Z",
+      "tool": {
+        "name": "review",
+        "version": "1"
+      },
+      "label": null,
+      "server": {
+        "name": "review",
+        "version": "1",
+        "protocolVersion": "1"
+      },
+      "tools": [
+        {
+          "name": "test",
+          "inputSchema": {},
+          "title": null,
+          "description": null,
+          "annotations": null,
+          "outputSchema": null
+        }
+      ],
+      "stats": {
+        "toolCount": 1,
+        "pages": 1
+      }
+    }
+  },
+  {
+    "id": "RS2N053",
+    "name": "invalid tools field",
+    "expected": "REJECT",
+    "reason": "",
+    "before": {
+      "format": "joons-mcp-diff/snapshot",
+      "schemaVersion": 1,
+      "createdAt": "2026-11-12T00:00:00Z",
+      "tool": {
+        "name": "review",
+        "version": "1"
+      },
+      "label": null,
+      "server": {
+        "name": "review",
+        "version": "1",
+        "protocolVersion": "1"
+      },
+      "tools": null,
+      "stats": {
+        "toolCount": 1,
+        "pages": 1
+      }
+    },
+    "after": {
+      "format": "joons-mcp-diff/snapshot",
+      "schemaVersion": 1,
+      "createdAt": "2026-11-12T00:00:00Z",
+      "tool": {
+        "name": "review",
+        "version": "1"
+      },
+      "label": null,
+      "server": {
+        "name": "review",
+        "version": "1",
+        "protocolVersion": "1"
+      },
+      "tools": [
+        {
+          "name": "test",
+          "inputSchema": {},
+          "title": null,
+          "description": null,
+          "annotations": null,
+          "outputSchema": null
+        }
+      ],
+      "stats": {
+        "toolCount": 1,
+        "pages": 1
+      }
+    }
+  },
+  {
+    "id": "RS2N054",
+    "name": "duplicate tools direct",
+    "expected": "REJECT",
+    "reason": "",
+    "before": {
+      "format": "joons-mcp-diff/snapshot",
+      "schemaVersion": 1,
+      "createdAt": "2026-11-12T00:00:00Z",
+      "tool": {
+        "name": "review",
+        "version": "1"
+      },
+      "label": null,
+      "server": {
+        "name": "review",
+        "version": "1",
+        "protocolVersion": "1"
+      },
+      "tools": [
+        {
+          "name": "test",
+          "inputSchema": {},
+          "title": null,
+          "description": null,
+          "annotations": null,
+          "outputSchema": null
+        },
+        {
+          "name": "test",
+          "inputSchema": {},
+          "title": null,
+          "description": null,
+          "annotations": null,
+          "outputSchema": null
+        }
+      ],
+      "stats": {
+        "toolCount": 2,
+        "pages": 1
+      }
+    },
+    "after": {
+      "format": "joons-mcp-diff/snapshot",
+      "schemaVersion": 1,
+      "createdAt": "2026-11-12T00:00:00Z",
+      "tool": {
+        "name": "review",
+        "version": "1"
+      },
+      "label": null,
+      "server": {
+        "name": "review",
+        "version": "1",
+        "protocolVersion": "1"
+      },
+      "tools": [
+        {
+          "name": "test",
+          "inputSchema": {},
+          "title": null,
+          "description": null,
+          "annotations": null,
+          "outputSchema": null
+        }
+      ],
+      "stats": {
+        "toolCount": 1,
+        "pages": 1
+      }
+    }
+  },
+  {
+    "id": "RS2N055",
+    "name": "invalid root boolean",
+    "expected": "REJECT",
+    "reason": "",
+    "before": {
+      "format": "joons-mcp-diff/snapshot",
+      "schemaVersion": 1,
+      "createdAt": "2026-11-12T00:00:00Z",
+      "tool": {
+        "name": "review",
+        "version": "1"
+      },
+      "label": null,
+      "server": {
+        "name": "review",
+        "version": "1",
+        "protocolVersion": "1"
+      },
+      "tools": [
+        {
+          "name": "test",
+          "inputSchema": true,
+          "title": null,
+          "description": null,
+          "annotations": null,
+          "outputSchema": null
+        }
+      ],
+      "stats": {
+        "toolCount": 1,
+        "pages": 1
+      }
+    },
+    "after": {
+      "format": "joons-mcp-diff/snapshot",
+      "schemaVersion": 1,
+      "createdAt": "2026-11-12T00:00:00Z",
+      "tool": {
+        "name": "review",
+        "version": "1"
+      },
+      "label": null,
+      "server": {
+        "name": "review",
+        "version": "1",
+        "protocolVersion": "1"
+      },
+      "tools": [
+        {
+          "name": "test",
+          "inputSchema": {},
+          "title": null,
+          "description": null,
+          "annotations": null,
+          "outputSchema": null
+        }
+      ],
+      "stats": {
+        "toolCount": 1,
+        "pages": 1
+      }
+    }
+  },
+  {
+    "id": "RS2N056",
+    "name": "sparse tools array",
+    "expected": "REJECT",
+    "reason": "Sparse JS API argument, not serializable as a sparse JSON array.",
+    "before": {
+      "format": "joons-mcp-diff/snapshot",
+      "schemaVersion": 1,
+      "createdAt": "2026-11-12T00:00:00Z",
+      "tool": {
+        "name": "review",
+        "version": "1"
+      },
+      "label": null,
+      "server": {
+        "name": "review",
+        "version": "1",
+        "protocolVersion": "1"
+      },
+      "tools": [
+        null
+      ],
+      "stats": {
+        "toolCount": 1,
+        "pages": 1
+      }
+    },
+    "after": {
+      "format": "joons-mcp-diff/snapshot",
+      "schemaVersion": 1,
+      "createdAt": "2026-11-12T00:00:00Z",
+      "tool": {
+        "name": "review",
+        "version": "1"
+      },
+      "label": null,
+      "server": {
+        "name": "review",
+        "version": "1",
+        "protocolVersion": "1"
+      },
+      "tools": [
+        {
+          "name": "test",
+          "inputSchema": {},
+          "title": null,
+          "description": null,
+          "annotations": null,
+          "outputSchema": null
+        }
+      ],
+      "stats": {
+        "toolCount": 1,
+        "pages": 1
+      }
+    },
+    "reconstruct": "sparseTools"
+  },
+  {
+    "id": "RS2N057",
+    "name": "sparse enum array",
+    "expected": "REJECT",
+    "reason": "Sparse JS API argument must fail validation.",
+    "before": {
+      "format": "joons-mcp-diff/snapshot",
+      "schemaVersion": 1,
+      "createdAt": "2026-11-12T00:00:00Z",
+      "tool": {
+        "name": "review",
+        "version": "1"
+      },
+      "label": null,
+      "server": {
+        "name": "review",
+        "version": "1",
+        "protocolVersion": "1"
+      },
+      "tools": [
+        {
+          "name": "test",
+          "inputSchema": {
+            "enum": [
+              null
+            ]
+          },
+          "title": null,
+          "description": null,
+          "annotations": null,
+          "outputSchema": null
+        }
+      ],
+      "stats": {
+        "toolCount": 1,
+        "pages": 1
+      }
+    },
+    "after": {
+      "format": "joons-mcp-diff/snapshot",
+      "schemaVersion": 1,
+      "createdAt": "2026-11-12T00:00:00Z",
+      "tool": {
+        "name": "review",
+        "version": "1"
+      },
+      "label": null,
+      "server": {
+        "name": "review",
+        "version": "1",
+        "protocolVersion": "1"
+      },
+      "tools": [
+        {
+          "name": "test",
+          "inputSchema": {},
+          "title": null,
+          "description": null,
+          "annotations": null,
+          "outputSchema": null
+        }
+      ],
+      "stats": {
+        "toolCount": 1,
+        "pages": 1
+      }
+    },
+    "reconstruct": "sparseEnum"
+  },
+  {
+    "id": "RS2N058",
+    "name": "result as snapshot",
+    "expected": "REJECT",
+    "reason": "",
+    "before": {
+      "format": "joons-mcp-diff/result",
+      "schemaVersion": 1,
+      "createdAt": "2026-11-12T00:00:00Z",
+      "tool": {
+        "name": "review",
+        "version": "1"
+      },
+      "label": null,
+      "server": {
+        "name": "review",
+        "version": "1",
+        "protocolVersion": "1"
+      },
+      "tools": [
+        {
+          "name": "test",
+          "inputSchema": {},
+          "title": null,
+          "description": null,
+          "annotations": null,
+          "outputSchema": null
+        }
+      ],
+      "stats": {
+        "toolCount": 1,
+        "pages": 1
+      }
+    },
+    "after": {
+      "format": "joons-mcp-diff/snapshot",
+      "schemaVersion": 1,
+      "createdAt": "2026-11-12T00:00:00Z",
+      "tool": {
+        "name": "review",
+        "version": "1"
+      },
+      "label": null,
+      "server": {
+        "name": "review",
+        "version": "1",
+        "protocolVersion": "1"
+      },
+      "tools": [
+        {
+          "name": "test",
+          "inputSchema": {},
+          "title": null,
+          "description": null,
+          "annotations": null,
+          "outputSchema": null
+        }
+      ],
+      "stats": {
+        "toolCount": 1,
+        "pages": 1
+      }
+    }
+  },
+  {
+    "id": "RS2N059",
+    "name": "unknown additive metadata",
+    "expected": "UNCHANGED",
+    "reason": "",
+    "before": {
+      "format": "joons-mcp-diff/snapshot",
+      "schemaVersion": 1,
+      "createdAt": "2026-11-12T00:00:00Z",
+      "tool": {
+        "name": "review",
+        "version": "1"
+      },
+      "label": null,
+      "server": {
+        "name": "review",
+        "version": "1",
+        "protocolVersion": "1",
+        "extra": "ignored"
+      },
+      "tools": [
+        {
+          "name": "test",
+          "inputSchema": {},
+          "title": null,
+          "description": null,
+          "annotations": null,
+          "outputSchema": null
+        }
+      ],
+      "stats": {
+        "toolCount": 1,
+        "pages": 1
+      },
+      "extra": {
+        "foo": "bar"
+      }
+    },
+    "after": {
+      "format": "joons-mcp-diff/snapshot",
+      "schemaVersion": 1,
+      "createdAt": "2026-11-12T00:00:00Z",
+      "tool": {
+        "name": "review",
+        "version": "1"
+      },
+      "label": null,
+      "server": {
+        "name": "review",
+        "version": "1",
+        "protocolVersion": "1"
+      },
+      "tools": [
+        {
+          "name": "test",
+          "inputSchema": {},
+          "title": null,
+          "description": null,
+          "annotations": null,
+          "outputSchema": null
+        }
+      ],
+      "stats": {
+        "toolCount": 1,
+        "pages": 1
+      }
+    }
+  }
+]
